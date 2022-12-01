@@ -1,0 +1,64 @@
+.Home_page_heading{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+}
+.Home_page_heading h1{
+    font-size: 6rem;
+    color: var(--text-white);
+    font-family: var( --logo-fonts);
+}
+.Home_page_heading p{
+    font-size: 2rem;
+    color: var(--text-white);
+    font-family: var(  --text-fonts);
+}
+.slider_box{
+
+}
+.slider_box::before{
+    background-color:rgba(22,18,63,0.6);
+}
+.button_inquiry{
+    border: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding: 6px 15px;
+    background-color: var(--secondry-color);
+    border: 2px solid var(--secondry-color);
+
+    color: var(--text-white);
+    margin-right: 10px;
+
+}
+.button_about_us{
+    border: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+
+    padding: 6px 15px;
+    background-color: transparent;
+    border: 2px solid var(--text-white);
+    color: var(--text-white);
+
+
+
+
+}
+@media (max-width:576px) {
+    .Home_page_heading h1{
+        font-size: 4rem;
+        color: var(--text-white);
+    }
+    .Home_page_heading p{
+        font-size: 1.5rem;
+        color: var(--text-white);
+        padding: 0 25px;
+    }
+    .button_inquiry,.button_about_us{
+        font-size: 1.2rem;
+    }
+
+}
