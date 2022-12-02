@@ -1,3 +1,135 @@
 .container{
     width: 100%;
 }
+.Home_about_us{
+    width: 100%;
+}
+.about_left_home{
+
+}
+.about_left_home h4{
+
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: var(--text-fonts);
+
+}
+.about_left_home h2{
+font-size: 3.2rem;
+color: var(--text-black);
+font-weight: 600;
+font-family: var(--text-fonts);
+margin-bottom: 20px;
+}
+.about_left_home p{
+    margin-top: 20px;
+    color: #b3b3b3;
+    font-size: 2rem;
+    width: 70%;
+    margin-bottom: 20px;
+
+}
+
+.about_left_home .line_home{
+    max-width: 80px  !important;
+    max-height: 4px !important;
+    background-color:var(--secondry-color) !important;
+    border-radius: 10px;
+}
+.about_left_home  img{
+
+    width: 79%;
+    height: 270px;
+    border-radius: 20px;
+}
+.about_content p{
+    font-size: 2.2rem;
+    font-family: var(--text-fonts);
+
+}
+.about_content span{
+    font-size: 2.6rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+.about_content h5{
+    font-size: 2.5rem;
+    font-family: var(--text-fonts);
+    font-weight: 500;
+}
+
+.about_content  button{
+    background: var(--secondry-color);
+    border-radius: 7px;
+    color: #fff;
+    font-size: 2rem;
+    padding:5px 10px;
+    margin-top: 10px;
+
+    border: none;
+    font-family: var(--text-fonts);
+    font-weight: 500;
+}
+.img_prd{
+    width: 100%;
+    height: 300px;
+}
+.home_products_img{
+    margin: 50px 0;
+}
+.pd_details{
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+}
+.pd_details h3{
+    font-size: 2rem;
+    color: var(--text-white);
+
+}
+.pd_details div{
+    max-height: 4px;
+    max-width: 80px;
+    background-color: var(--secondry-color);
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+    border-radius: 5px;
+}
+.pd_details p{
+    font-size: 1.6rem;
+    color: var(--text-white);
+    width: 80%;
+
+}
+.div_trns{
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.6);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.products_range{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width:576px) {
+    .about_left_home  img{
+
+        width: 100% !important;
+        height: 270px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+    .about_left_home p{
+        width: 100% !important;
+    }
+
+}

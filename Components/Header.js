@@ -1,6 +1,7 @@
 import React,{useEffect} from 'react'
 import styles from '../styles/Header.module.css'
 import Link from 'next/link'
+import { ReactSearchAutocomplete } from "react-search-autocomplete";
 // import $ from "jquery"
 import { AiOutlineSearch,AiOutlineMenu,AiFillPhone } from "react-icons/ai";
 import { FaCaretDown,FaSearch ,FaWhatsappSquare,FaFacebook,FaTwitter,FaWhatsapp} from "react-icons/fa";
@@ -83,6 +84,59 @@ function search_bar_show(){
   // document.getElementsByClassName('searchwrraper')[0].style.opacity=1
 }
 
+
+const items = [
+  {
+    id: 0,
+    name: 'Cobol'
+  },
+  {
+    id: 1,
+    name: 'JavaScript'
+  },
+  {
+    id: 2,
+    name: 'Basic'
+  },
+  {
+    id: 3,
+    name: 'PHP'
+  },
+  {
+    id: 4,
+    name: 'Java'
+  }
+]
+
+const handleOnSearch = (string, results) => {
+  // onSearch will have as the first callback parameter
+  // the string searched and for the second the results.
+  console.log(string, results)
+}
+
+const handleOnHover = (result) => {
+  // the item hovered
+  console.log(result)
+}
+
+const handleOnSelect = (item) => {
+  // the item selected
+  console.log(item)
+  alert("geh")
+}
+
+const handleOnFocus = () => {
+  console.log('Focused')
+}
+
+const formatResult = (item) => {
+  return (
+    <>
+     
+     <Link href=""><span style={{ display: 'block', textAlign: 'left' }} className={styles.search_link}>{item.name}</span></Link>
+    </>
+  )
+}
   return (
     <div className={styles.Container}>
       
@@ -155,20 +209,29 @@ function search_bar_show(){
             search_bar_show()
           }}> <AiOutlineSearch/></button>
           <div className={styles.searchwrraper} id="sear_wrraper_box">
-            <div className='d_flex_c '>
+          <ReactSearchAutocomplete
+            items={header_data}
+            onSearch={handleOnSearch}
+            onHover={handleOnHover}
+            onSelect={handleOnSelect}
+            onFocus={handleOnFocus}
+            autoFocus
+            formatResult={formatResult}
+          />
+            {/* <div className='d_flex_c '>
             <input type="text" placeholder='Search...!'></input>
         <span className='btn_cursor'>
 
         <FaSearch/>
         </span>
-            </div>
+            </div> */}
        
 
-        <div className='d_flex_C_F_C w_100 search_link' >
+        {/* <div className='d_flex_C_F_C w_100 search_link' >
           <span className='w_100'><Link href="" className='mx-2'> <AiOutlineSearch/>search 1</Link></span>
           <span className='w_100'><Link href=""  className='mx-2'> <AiOutlineSearch/>search 1</Link></span>
           <span className='w_100'><Link href=""  className='mx-2'> <AiOutlineSearch/>search 1</Link></span>
-        </div>
+        </div> */}
       </div>
       </div>
       </div>

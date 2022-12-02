@@ -16,7 +16,7 @@ const SliderHome = () => {
   const HomeSlider=[
     {
     id:1,
-    img:require('../public/Images/slide1.jpg'),
+    img:require('../public/Images/slide1.png'),
 
     // heading:"we provide best Products  As per Your Requirments",
     heading:"Nickel Alloys",
@@ -27,13 +27,13 @@ const SliderHome = () => {
   },
   {
     id:2,
-    img:require('../public/Images/slide1.jpg'),
+    img:require('../public/Images/slide2.png'),
     heading:"Cobalt Alloys",
     text:'We are Importer & Exporter of all type of  Cobalt alloy Scrap & Secondary surplus',
   },
   {
     id:3,
-    img:require('../public/Images/slide1.jpg'),
+    img:require('../public/Images/slide3.png'),
 
     heading:"Stainless Steel",
     text:'We are Importer & Exporter of all type of Stainless Steel Scrap,Turning & Secondary surplus',
@@ -41,21 +41,21 @@ const SliderHome = () => {
   },
   {
     id:4,
-    img:require('../public/Images/slide1.jpg'),
+    img:require('../public/Images/slide3.png'),
     heading:"Duplex&SuperDuplex",
     text:'We are Importer & Exporter of all type of Duplex And Super Duplex Scrap & Secondary surplus',
     
   },
   {
     id:5,
-    img:require('../public/Images/slide1.jpg'),
+    img:require('../public/Images/slide4.png'),
     heading:"Titanium Scrap ",
     text:'We are Importer & Exporter of all type of high Titanium Scrap & Secondary surplus',
     
   },
   {
     id:6,
-    img:require('../public/Images/slide1.jpg'),
+    img:require('../public/Images/slide5.jpg'),
     heading:"Tungsten Scrap ",
     text:'We are Importer & Exporter of all type of high Tungsten Scrap & Secondary surplus',
     
@@ -71,7 +71,7 @@ const SliderHome = () => {
 
         {HomeSlider.map((item,index)=>{
 return( <div className={styles.slider_box}>
-  
+  <div className={styles.transpernt_bg}></div>
   <Image className="card-img-top img_fillter" src={item.img} alt="Card image cap" showThumbs={false} />
   <div className={styles.Home_page_heading}>
 

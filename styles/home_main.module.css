@@ -4,6 +4,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50% ,-50%);
+    z-index: 12;
 }
 .Home_page_heading h1{
     font-size: 6rem;
@@ -20,6 +21,17 @@
 }
 .slider_box::before{
     background-color:rgba(22,18,63,0.6);
+}
+.slider_box{
+    background-image: linear-gradient(0deg, rgba(22,18,63,0.6), rgba(22,18,63,0.6)), url("/public/Images/slide1.png") !important;
+}
+.transpernt_bg{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 100vh;
+    background-color: rgba(22,18,63,0.4);
+    z-index: 10;
 }
 .button_inquiry{
     border: none;

@@ -45,10 +45,33 @@
   
     /* transition: all 0.5s ease-in-out; */
     display: none;
+    width: 300px;
 
+}
+.searchwrraper ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.searchwrraper ul li{
+    height: 40px;
 }
 .search_box{
     position: relative;
+}
+.search_link{
+    padding: 0px;
+
+}
+.search_link a{
+    font-size: 14px;
+    padding: 0px !important;
+   
+line-height: normal;
+    
+}
+.searchwrraper a:hover{
+    box-shadow: none;
 }
 .searchwrraper input{
     border: none;
