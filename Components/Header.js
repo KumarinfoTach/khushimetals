@@ -21,7 +21,7 @@ const Header = () => {
 
   },{
     name:"About",
-    link:"/about"
+    link:"/About"
   },{
     name:"Products",
     link:"#",
@@ -41,7 +41,7 @@ const Header = () => {
   },
   {
     name:"Contact Us",
-    link:"/contact"
+    link:"/Contact"
   }
 
 
