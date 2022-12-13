@@ -186,5 +186,6 @@ return(<div className="col-12 col-md-3 col-sm-6 shadow_b" key={index}>
     </>
   );
 };
+// laliy
 
 export default Home_main;
