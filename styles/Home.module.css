@@ -229,7 +229,7 @@ height: 204px;
   }
   .contact_sections{
     width: 100%;
-    background-image:linear-gradient(#16123fd6,#0c0a22d6), url("../public/images/contact_img.jpg");
+    /* background-image:linear-gradient(#16123fd6,#0c0a22d6), url("../public/images/contact_img.jpg"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -1077,7 +1077,7 @@ animation: rotate 30s infinite;
 .Globel_shiping{
   width:100%;
 
-  background-image:url("../public/images/GImg.jpg");
+  /* background-image:url("../public/images/GImg.jpg"); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
