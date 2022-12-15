@@ -117,10 +117,10 @@ const Home_main = () => {
             })}
           </div>
         </div>
-        <div className={styles.slide_container}>
+        {/* <div className={styles.slide_container}>
        <Heading_P text={{ text1: "What We Do", text2: "Our Products" }} />
-       <ProductsSlider/>
-       </div>
+       {/* <ProductsSlider/> 
+       </div> */}
 
 
         <div className={styles.specifications}>

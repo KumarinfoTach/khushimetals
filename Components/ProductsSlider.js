@@ -64,6 +64,8 @@ export default class SimpleSlider extends Component {
          autoplay: true,
         className: "center",
         centerMode: true,
+
+       
   
      
         responsive: [

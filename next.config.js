@@ -11,5 +11,10 @@ const nextConfig = {
     return config;
     }
 }
+const withOptimizedImages = require('next-optimized-images');
+
+module.exports = withOptimizedImages({
+  handleImages: ['jpeg', 'png', 'svg'],
+});
 
 module.exports = nextConfig

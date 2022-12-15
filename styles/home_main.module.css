@@ -22,9 +22,9 @@
 .slider_box::before{
     background-color:rgba(22,18,63,0.6);
 }
-.slider_box{
+/* .slider_box{
     background-image: linear-gradient(0deg, rgba(22,18,63,0.6), rgba(22,18,63,0.6)), url("/public/Images/slide1.png") !important;
-}
+} */
 .transpernt_bg{
     position: absolute;
     width: 100%;
