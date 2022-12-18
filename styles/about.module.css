@@ -62,6 +62,7 @@ width: fit-content;
 }
 .about_choose ul{
     display: block;
+    margin-left: 48px;
 }
 .about_choose ul li{
 font-size: 2rem;
@@ -91,5 +92,9 @@ width: 100%;
 
     .About_container{
         padding: 20px;
+    }
+    .about_choose ul{
+
+        margin-left: 48px;
     }
 }

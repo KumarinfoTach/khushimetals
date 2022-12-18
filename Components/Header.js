@@ -25,18 +25,79 @@ const Header = () => {
   },{
     name:"Products",
     link:"#",
-    submenu:[{
-      name:"stainless Steel",
-      link:"/stainless_steel"
+    label:"btn-2",
+    submenu:[
+      
+    {
+      name:"Cobalt Alloy Scrap",
+      link:"/Nickel_alloys"
     },
     {
-      name:"Nickel alloys",
+      name:"Nickel alloys Scrap",
       link:"/Nickel_alloys"
-    }]
+    }
+    ,
+    {
+      name:"Tungsten Alloy Scrap",
+      link:"/Nickel_alloys"
+    }
+    ,
+    {
+      name:"Titanium & Tantalum",
+      link:"/Nickel_alloys"
+    }
+    ,
+      
+      {
+      name:"Stainless Steel Scrap",
+      link:"/stainless_steel"
+    }
+  ]
   },
   {
     name:"Metarials",
-    link:"/Metarials"
+    link:"/Metarials",
+    label:"btn-3",
+    submenu:[
+      
+      {
+        name:"Cobalt",
+        link:"/Nickel_alloys"
+      },
+      {
+        name:"Nickel ",
+        link:"/Nickel_alloys"
+      }
+     ,
+        
+        {
+        name:"Chromium",
+        link:""
+      }
+      ,
+        
+      {
+      name:"Niobium",
+      link:""
+    }
+    ,
+        
+    {
+    name:"Molybdenum",
+    link:""
+  }, 
+  {
+    name:"Tungsten",
+    link:"/Nickel_alloys"
+  }
+  ,
+  {
+    name:"Titanium & Tantalum",
+    link:"/Nickel_alloys"
+  }
+  ,
+  
+    ]
   
   },
   {
@@ -173,12 +234,12 @@ const formatResult = (item) => {
       <ul>
         {header_data.map((item,index)=>{
           return(
-            <li>{item.submenu?<label for="btn-2" class="show">{item.name} +</label>:null}
+            <li>{item.submenu?<label for={item.label} class="show">{item.name} +</label>:null}
               
               
               <Link href={item.link} key={index}>{item.name} {item.submenu?<FaCaretDown/>
             :null}</Link>
-            {item.submenu?<input type="checkbox" id="btn-2"/>:null}
+            {item.submenu?<input type="checkbox" id={item.label}/>:null}
             {item.submenu?<ul>
             {item.submenu?
             item.submenu.map((each,index)=>{

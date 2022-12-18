@@ -126,7 +126,7 @@ const About = () => {
         <p>In order to maintain the reputation over the years, we are involved in providing supreme grade nichrome and tungsten scrap to our patrons. We are offering a large range of nichrome and tungsten scrap that are made as per quality standards at our vendor’s end.</p>
         <h3 > Some factors of our company are as follo​ws:
         </h3>
-        <div className="d-flex">
+        <div className="d-flex flex-wrap">
         <ul >
           <li> Rich vendor base</li>
           <li> Client-centric approach</li>

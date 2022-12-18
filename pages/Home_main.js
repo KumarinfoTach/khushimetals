@@ -161,7 +161,7 @@ return(<div className="col-12 col-md-3 col-sm-6 shadow_b" key={index}>
 
               <div className="globals_contents">
                 <h2>SHIPPING ALL OVER THE GLOBE​</h2>
-                <h4>WE ARE IMPORT AND EXPORT </h4>
+                <h4>We are exporter & Importer of all metal & alloy scraps.</h4>
 
                 <div class="line_b">.</div>
                 <p>​We supply our products all over the world. Large network of Manufactures, Distributors & Suppliers around the world.</p>
