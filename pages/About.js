@@ -7,13 +7,23 @@ import styles from "../styles/about.module.css";
 import img_about from "../public/Images/about_us_main.png";
 import Pages_heading from "../Components/SmallComponents/Pages_heading";
 import logo from "../public/Images/logo.png"
+import topimg from "../public/Images/contact_img.jpg"
 const About = () => {
+  const data_bredcrum =[{
+    id:1,
+    name:"Home",
+    link:"/"
+},{
+    id:2,
+    name:"About",
+    link:"/About"
+}]
   return (
     <>
-      <TopPages />
+      <TopPages data={{heading:"About Us",img:topimg}}/>
 
       <div className={styles.About_container}>
-        <Bredcurm />
+      <Bredcurm data={{data_bredcrum}}/>
 
         <div className={styles.about_contents}>
           <div className="row">

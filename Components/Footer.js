@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-
+import { FaWhatsapp,FaInstagram,FaLinkedinIn,FaTwitter } from "react-icons/fa";
 
 export const Footer = () => {
   return (
@@ -53,14 +53,52 @@ export const Footer = () => {
            <div className="news_email">
              <input type='email' className='input_email' placeholder="Enter Email Address"/><a to='#'>GO</a>
            </div>
+           <style jsx>{`
+        .footer_social i{
+          padding: 12px;
+          border-radius: 50%;
+          background: rgba(0, 0, 0, 0.54);
+          color: #00B274;
+          margin: 5px;
+          font-size: 1.9rem;
+          cursor: pointer;
+          transition: all 0.5s;
+        }
+        .footer_social i:hover {
+        transform: scale(0.8);
+        color:#E3B71B ;
+        
+        }
+        .company_status h4{
+          font-weight: 400;
+        font-size: 2rem;
+        
+        /* identical to box height */
+        
+        
+        color: #00B274;
+        }
+      `}</style>
            <div className="stay_tuch">
              <h4>STAY IN TOUCH</h4>
              <div className='footer_social'>
              {/* <i class="fa-brands fa-facebook-f"></i> */}
-            <a href='https://wa.me/9321271527' target="_blank"> <i class="fa-brands fa-whatsapp" ></i></a>
-           <a href="https://www.instagram.com/invites/contact/?i=1x8zwnbbom1f1&utm_content=mh9pec9" target="_blank">  <i class="fa-brands fa-instagram"></i></a>
-             <a href="https://www.linkedin.com/in/modi-metals-5a1ba9200" target="_blank">  <i class="fa-brands fa-linkedin-in"></i></a>
-             <a href="https://twitter.com/MODI_METALS?t=_5ujRniaI6uWXLPosEmdJw&s=09" className="" target="_blank">  <i class="fab fa-twitter"></i></a>
+             <div className='links_s'>
+             <a href='https://wa.me/9321271527' target="_blank"> <span class="" ><FaWhatsapp/></span></a>
+             </div>
+             <div className='links_s'>
+             <a href="https://www.instagram.com/invites/contact/?i=1x8zwnbbom1f1&utm_content=mh9pec9" target="_blank">  <span><FaInstagram/></span></a>
+              </div>
+              <div className='links_s'>
+              <a href="https://www.linkedin.com/in/modi-metals-5a1ba9200" target="_blank">  <span class=""><FaLinkedinIn/></span></a>
+              </div>
+              <div className='links_s'>
+              <a href="https://twitter.com/MODI_METALS?t=_5ujRniaI6uWXLPosEmdJw&s=09" className="" target="_blank">  <span class=""><FaTwitter/></span></a>
+              </div>
+            
+          
+           
+            
 
              </div>
 

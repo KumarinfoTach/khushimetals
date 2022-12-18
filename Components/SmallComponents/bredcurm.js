@@ -5,20 +5,13 @@ import { FaAngleDoubleRight } from "react-icons/fa";
 
 
 
-const Bredcurm = () => {
-    const data_bredcrum =[{
-        id:1,
-        name:"Home",
-        link:"/"
-    },{
-        id:2,
-        name:"About",
-        link:"/About"
-    }]
+const Bredcurm = ({data}) => {
+
+ 
   return (
     <div className='bredcrum'>
     <div className='link_sbredcrum'>
-    {data_bredcrum.map((item,index)=>{
+    {data.data_bredcrum.map((item,index)=>{
     return(
         <Link href={item.link} key={index}>{item.name} <span><FaAngleDoubleRight/></span></Link>
     )

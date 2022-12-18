@@ -5,6 +5,7 @@ import styles from  "../styles/contact.module.css"
 import Bredcurm from "../Components/SmallComponents/bredcurm";
 import { FaRegEnvelope,FaPhoneAlt,FaMapMarkerAlt,FaArrowRight } from "react-icons/fa";
 import Heading_P from '../Components/Heading_P';
+import topimg from "../public/Images/contact_img.jpg"
 const Contact = () => {
 
   const[name,setName]= useState('')
@@ -12,14 +13,22 @@ const Contact = () => {
   const[phone,setPhone]= useState('')
   const[message,setMessage]= useState('')
 
-  
+  const data_bredcrum =[{
+    id:1,
+    name:"Home",
+    link:"/"
+},{
+    id:2,
+    name:"Contact",
+    link:"/Contact"
+}]
 
 
   return (
     <>
-    <TopPages />
+      <TopPages data={{heading:"Contact Us",img:topimg}}/>
     <div className={styles.contact_us}>
-    <Bredcurm />
+    <Bredcurm data={{data_bredcrum}}/>
 <div className={styles.contact_container}>
 <div className={`${styles.gap_row} row`}>
       <div className="col-12 col-md-4">

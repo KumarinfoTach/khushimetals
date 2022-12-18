@@ -2,7 +2,7 @@ import React from 'react'
 
 const Heading_P = (props) => {
 
-    console.log(props,"props")
+   
     var text=props.text
   return (
     <div className='text-center w-100'>

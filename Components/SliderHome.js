@@ -78,8 +78,8 @@ return( <div className={styles.slider_box}>
     <h1>{item.heading}</h1>
     <p>{item.text}</p>
     <div className={styles.button_group}>
-    <Link  href="/contact">  <button className={styles.button_inquiry} role="button"> Inquiry now</button></Link>
-    <Link  href="/contact">  <button className={styles.button_about_us} role="button"> About US</button></Link>
+    <Link  href="/Contact">  <button className={styles.button_inquiry} role="button"> Inquiry now</button></Link>
+    <Link  href="/About">  <button className={styles.button_about_us} role="button"> About US</button></Link>
     </div>
     
   </div>

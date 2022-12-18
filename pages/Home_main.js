@@ -13,7 +13,11 @@ import { OfferData } from "../public/Data/DataJs";
 import img1 from "../public/Images/Icons/Img1.png"
 import ProductsSlider from "../Components/ProductsSlider"
 import img2 from "../public/Images/gImg_b.jpg"
-
+import Gimg  from "../public/Images/GImg.jpg"
+import contact_img from "../public/Images/contact_img.jpg"
+import Carousel2 from "../Components/Slider_p";
+import { Our_products_data } from "../public/Data/DataJs";
+import Link from "next/link";
 
 const Home_main = () => {
   return (
@@ -45,7 +49,7 @@ const Home_main = () => {
                 material with the aid of modern machines. These products are
                 known for their easy usability and low cost.
               </h5>
-              <button type="button">Read More..</button>
+             <Link href="/About"><button type="button">Read More..</button></Link> 
             </div>
           </div>
         </div>
@@ -117,10 +121,10 @@ const Home_main = () => {
             })}
           </div>
         </div>
-        {/* <div className={styles.slide_container}>
+        <div className={styles.slide_container}>
        <Heading_P text={{ text1: "What We Do", text2: "Our Products" }} />
-       {/* <ProductsSlider/> 
-       </div> */}
+     <Carousel2 data={{slideData:Our_products_data}} /> 
+       </div>
 
 
         <div className={styles.specifications}>
@@ -148,7 +152,8 @@ return(<div className="col-12 col-md-3 col-sm-6 shadow_b" key={index}>
 
 
         <div className="Globel_shiping">
-          <div className="row">
+        <Image src={Gimg} className={styles.Gimage} alt="img" />
+          <div className="row z_index">
             <div className="col-12 col-md-6">
               <Image src={img2} alt="img" />
             </div>
@@ -160,7 +165,7 @@ return(<div className="col-12 col-md-3 col-sm-6 shadow_b" key={index}>
 
                 <div class="line_b">.</div>
                 <p>​We supply our products all over the world. Large network of Manufactures, Distributors & Suppliers around the world.</p>
-                <button type="button" className="button_more">About</button>
+                <Link href="/About" ><button type="button" className="button_more">About</button></Link>
               </div>
             </div>
           </div>
@@ -168,8 +173,10 @@ return(<div className="col-12 col-md-3 col-sm-6 shadow_b" key={index}>
 
 
         <div className={styles.contact_sections}>
+        <Image src={contact_img} className={styles.Gimage} alt="img" />
+        <div className={styles.gtran_bg}></div>
 
-          <div className="row">
+          <div className="row z_index">
             <div className ="col-12 col-md-6 ">
 <h2>CONTACT FOR OUR PRODUCTS TODAY</h2>
 <h4>​Contact us for more information regarding our Products and alloys options, or request a quote for further pricing details today. Khushi Metals & Alloys is your trusted Scrap supplier and Exporter.</h4>

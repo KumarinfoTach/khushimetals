@@ -58,7 +58,7 @@ const menu_click=()=>{
 useEffect(() => {     
 
   $(window).on('scroll', function() {
-    console.log( $(this).scrollTop(),   );
+ 
     if( $(this).scrollTop()==0){
    if( $(window).width()<=1030){
 
