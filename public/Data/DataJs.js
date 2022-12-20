@@ -82,7 +82,58 @@ export const OfferData=[{
     ]
 
     
-export const Our_products_data=[{
+export const Our_products_data=[
+    
+    {
+        id:10,
+        img:require("../Images/Our_products/Cobalt-f75-crematory-scrap-recyling-greystone-alloys.webp"),
+        heading:"Cobalt f75 crematory scrap",
+        text:"",
+       
+    },
+    {
+        id:11,
+        img:require("../Images/Our_products/titaniumImg7.jpeg"),
+        heading:"titanium Scrap",
+        text:"",
+       
+    },
+    {
+        id:12,
+        img:require("../Images/Our_products/turning.jpg"),
+        heading:"turning",
+        text:"",
+       
+    },
+    {
+        id:13,
+        img:require("../Images/Our_products/Wirescrap.jpeg"),
+        heading:"Wire scrap",
+        text:"",
+       
+    },
+    {
+        id:14,
+        img:require("../Images/Our_products/SS Fitings Scrap.jpeg"),
+        heading:"SS Fittings Scrap",
+        text:"",
+       
+    },
+    {
+        id:15,
+        img:require("../Images/Our_products/Pipe Scraps.jpeg"),
+        heading:"Pipe Scrap",
+        text:"",
+       
+    },{
+        id:16,
+        img:require("../Images/Our_products/SS Cut Plate scrap.jpg"),
+        heading:"SS Cut Plate scrap",
+        text:"",
+       
+    },
+    
+    {
     id:1,
     img:require("../Images/Our_products/SinteredBlankScrap.jpeg"),
     heading:"Sintered Blank Scrap",
@@ -97,20 +148,6 @@ export const Our_products_data=[{
    
 },
 {
-    id:3,
-    img:require("../Images/Our_products/mixedsinteredscrap.jpeg"),
-    heading:"mixed sintered scrap",
-    text:"",
-   
-},
-{
-    id:4,
-    img:require("../Images/Our_products/insertscrap.jpeg"),
-    heading:"insertscrap",
-    text:"",
-   
-},
-{
     id:5,
     img:require("../Images/Our_products/DrillbitScrap.webp"),
     heading:"Drill bit Scrap",
@@ -118,9 +155,9 @@ export const Our_products_data=[{
    
 },
 {
-    id:6,
-    img:require("../Images/Our_products/BallScrap.jpeg"),
-    heading:"Ball Scrap",
+    id:3,
+    img:require("../Images/Our_products/mixedsinteredscrap.jpeg"),
+    heading:"mixed sintered scrap",
     text:"",
    
 },
@@ -131,6 +168,22 @@ export const Our_products_data=[{
     text:"",
    
 },
+{
+    id:4,
+    img:require("../Images/Our_products/insertscrap.jpeg"),
+    heading:"insertscrap",
+    text:"",
+   
+},
+
+{
+    id:6,
+    img:require("../Images/Our_products/BallScrap.jpeg"),
+    heading:"Ball Scrap",
+    text:"",
+   
+},
+
 {
     id:8,
     img:require("../Images/Our_products/carbide-grinding-sludge.webp"),
@@ -145,54 +198,7 @@ export const Our_products_data=[{
     text:"",
    
 },
-{
-    id:10,
-    img:require("../Images/Our_products/Cobalt-f75-crematory-scrap-recyling-greystone-alloys.webp"),
-    heading:"Cobalt f75 crematory scrap",
-    text:"",
-   
-},
-{
-    id:11,
-    img:require("../Images/Our_products/titaniumImg7.jpeg"),
-    heading:"titanium Scrap",
-    text:"",
-   
-},
-{
-    id:12,
-    img:require("../Images/Our_products/turning.jpg"),
-    heading:"turning",
-    text:"",
-   
-},
-{
-    id:13,
-    img:require("../Images/Our_products/Wirescrap.jpeg"),
-    heading:"Wire scrap",
-    text:"",
-   
-},
-{
-    id:14,
-    img:require("../Images/Our_products/SS Fitings Scrap.jpeg"),
-    heading:"SS Fittings Scrap",
-    text:"",
-   
-},
-{
-    id:15,
-    img:require("../Images/Our_products/Pipe Scraps.jpeg"),
-    heading:"Pipe Scrap",
-    text:"",
-   
-},{
-    id:16,
-    img:require("../Images/Our_products/SS Cut Plate scrap.jpg"),
-    heading:"SS Cut Plate scrap",
-    text:"",
-   
-},
+
 
 
 

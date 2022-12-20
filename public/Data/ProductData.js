@@ -1,4 +1,4 @@
-const Cobaltalloys_data = [
+export const Cobaltalloys_data = [
     {
       "Material Type": "",
       Co: "",
@@ -495,7 +495,7 @@ const Cobaltalloys_data = [
       Others: "",
     },
   ];
-  const Nickel_Alloy_data = [
+export const Nickel_Alloy_data = [
     {
       "Material type": "",
       Ni: "",
@@ -1254,7 +1254,7 @@ const Cobaltalloys_data = [
     },
   ];
 
-  const Nickel_Alloy_2nd_data = [
+export const Nickel_Alloy_2nd_data = [
     {
       "Material type": "",
       Ni: "",
@@ -1438,7 +1438,7 @@ const Cobaltalloys_data = [
       Other: "C 0.07%/ Al 5.7%/ B 0.015%/ Zr 0.005%",
     },
   ];
-  const Tungsten_alloys_data = [
+export  const Tungsten_alloys_data = [
     {
       "Material type": "",
       W: "",
@@ -1570,7 +1570,7 @@ const Cobaltalloys_data = [
       Others: "",
     },
   ];
-  const TitaniumandTantalum_data = [
+ export const TitaniumandTantalum_data = [
     {
       "Material type": "",
       Ti: "",
@@ -1952,7 +1952,7 @@ const Cobaltalloys_data = [
   ];
 
 
-const nickelContent={
+export const nickelContent={
 text1:" Nickel alloys are used for a wide variety of applications, the majority of which involve corrosion resistance and/or heat resistance. Some of these include:",
 list:[
     "Aircraft gas turbines",
@@ -1963,7 +1963,7 @@ list:[
 ],text2:"Some of the alloys we trade are:Inconel 713 / Inconel 625 / Inconel 738 / Inconel 718 / GTD111 / GTD222 / Rene 80 / Rene 88 / Rene 41 / Rene 77 / Rene 125 C1023 / Hastelloy C263 / Hastelloy X / Hastelloy C276 / Hastelloy C22 / Hastelloy C4 / PWA 1480 / PWA 1484 / CMSX 2 / CMSX 3 / CMSX 4 / CMSX 6",
 text3:"We have the possibility to offer Vacuum and airmelt grades."
 }
-const cobaltContent={
+export const cobaltContent={
     text1:"Cobalt alloys have higher melting points than Nickel (or iron) alloys. This gives them the ability to absorb stress to a higher absolute temperature. Cobalt alloys give superior hot corrosion resistance to gas turbine atmospheres; this is due to their high chromium content.This factor is the primary reason cobalt alloys are used in the lower stress, higher temperature stationary vanes for gas turbines.",
     list:[
         "Some of the materials we trade are: these materials are fully checked to ensure alloy conformity.",
@@ -1974,13 +1974,13 @@ const cobaltContent={
 
  
 }
-const tungstenContent={
+export const tungstenContent={
     text1:"Tungsten carbide (WC) is an extremely hard tungsten compound. It is used in the tips of drill bits, high speed cutting tools and in mining machinery.",
     text2:"We also recycle Tungsten Carbide and Tungsten based -oversprays/ powders/ sludges",
     text3:"Some of the alloys we trade are: Densalloy / Mallory / Hevimet / W / Ti / Tungsten carbide / Tungsten carbide soft scraps / Tungsten carbide with steel attachments"
 }
 
-const TitaniumandTantalum={
+export const TitaniumandTantalum={
     text1:"Titanium and Tantalum alloys are attractive structural materials due to their high strength, low density, and excellent corrosion resistance. The recognition of titanium excellent resistance in highly corrosive environments has led to widespread non-aerospace industrial applications. Stemming from decreasing cost and increasing availability of mill and fabricated products, titanium alloys have become standard engineering materials for a host of common consumer products too.",
     text2:"Below are a few of the alloys we trade in;",
     text3:"90 Ti- 6 Al-4 V / CP grade 1 / Cp grade 2 / 662 / 314 / 315 / 317 / 230 / 260- and most other grades"

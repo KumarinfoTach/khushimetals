@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react'
+import React,{useEffect,useRef} from 'react'
 import styles from '../styles/Header.module.css'
 import Link from 'next/link'
 import { ReactSearchAutocomplete } from "react-search-autocomplete";
@@ -7,6 +7,7 @@ import { AiOutlineSearch,AiOutlineMenu,AiFillPhone } from "react-icons/ai";
 import { FaCaretDown,FaSearch ,FaWhatsappSquare,FaFacebook,FaTwitter,FaWhatsapp} from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 const Header = () => {
+  const inputNameRef = useRef()
 // var jsdom = require('jsdom');
 // $ = require('jquery')(new jsdom.JSDOM().window);
   /* Please ❤ this if you like it! */
@@ -30,27 +31,27 @@ const Header = () => {
       
     {
       name:"Cobalt Alloy Scrap",
-      link:"/Nickel_alloys"
+      link:"/Products/CobaltAlloysScraps"
     },
     {
       name:"Nickel alloys Scrap",
-      link:"/Nickel_alloys"
+      link:"/Products/NickelAlloysScraps"
     }
     ,
     {
       name:"Tungsten Alloy Scrap",
-      link:"/Nickel_alloys"
+      link:"/Products/TungstenAlloysScraps"
     }
     ,
     {
       name:"Titanium & Tantalum",
-      link:"/Nickel_alloys"
+      link:"/Products/TitaniumandTantalumScraps"
     }
     ,
       
       {
       name:"Stainless Steel Scrap",
-      link:"/stainless_steel"
+      link:"/Products/StainlessSteelScraps"
     }
   ]
   },
@@ -109,6 +110,7 @@ const Header = () => {
 ]
 
 const menu_click=()=>{
+  document.getElementById("mobile_list").classList.remove("d-none");
  $(".icon").css("top","34px")
  $(".search_div").css("top","34px")
 
@@ -225,13 +227,14 @@ const formatResult = (item) => {
       <nav>
       <div className="logo"><span>Khushi</span> Metal and Alloys</div>
       <label for="btn" className="icon" onClick={()=>{
+        
   menu_click()
       }}>
       <AiOutlineMenu/>
        
       </label>
-      <input type="checkbox" id="btn"/>
-      <ul>
+      <input ref={inputNameRef} type="checkbox" id="btn"/>
+      <ul id="mobile_list">
         {header_data.map((item,index)=>{
           return(
             <li>{item.submenu?<label for={item.label} class="show">{item.name} +</label>:null}
@@ -245,7 +248,7 @@ const formatResult = (item) => {
             item.submenu.map((each,index)=>{
               return(
                
-            <li><Link href={each.link} key={index}>{each.name}</Link></li>
+            <li><Link href={each.link} key={index} >{each.name}</Link></li>
           
               )
             }):null
