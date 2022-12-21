@@ -1341,26 +1341,7 @@ export const Nickel_Alloy_2nd_data = [
   },
 ];
 export const Tungsten_alloys_data = [
-  {
-    "Material type": "",
-    W: "",
-    Ni: "",
-    Cu: "",
-    Fe: "",
-    Co: "",
-    C: "",
-    Others: "",
-  },
-  {
-    "Material type": "",
-    W: "",
-    Ni: "",
-    Cu: "",
-    Fe: "",
-    Co: "",
-    C: "",
-    Others: "",
-  },
+ 
   {
     "Material type": "Mallory 1000",
     W: "90.00",
@@ -1451,42 +1432,10 @@ export const Tungsten_alloys_data = [
     C: "6.00",
     Others: "TaC 3%/ TiC 4%",
   },
-  {
-    "Material type": "",
-    W: "",
-    Ni: "",
-    Cu: "",
-    Fe: "",
-    Co: "",
-    C: "",
-    Others: "",
-  },
-  {
-    "Material type": "",
-    W: "",
-    Ni: "",
-    Cu: "",
-    Fe: "",
-    Co: "",
-    C: "",
-    Others: "",
-  },
+  
 ];
 export const TitaniumandTantalum_data = [
-  {
-    "Material type": "",
-    Ti: "",
-    Al: "",
-    V: "",
-    Sn: "",
-    Mn: "",
-    Zr: "",
-    Mo: "",
-    Cu: "",
-    Cr: "",
-    Si: "",
-    Others: "",
-  },
+  
   {
     "Material type": "CP Grade 1",
     Ti: "Bal",
@@ -1543,20 +1492,7 @@ export const TitaniumandTantalum_data = [
     Si: "",
     Others: "0.5% O2/ 0.4% Fe",
   },
-  {
-    "Material type": "",
-    Ti: "",
-    Al: "",
-    V: "",
-    Sn: "",
-    Mn: "",
-    Zr: "",
-    Mo: "",
-    Cu: "",
-    Cr: "",
-    Si: "",
-    Others: "",
-  },
+  
   {
     "Material type": "Ti 6-6-2",
     Ti: "Bal",
@@ -1627,20 +1563,7 @@ export const TitaniumandTantalum_data = [
     Si: "",
     Others: "",
   },
-  {
-    "Material type": "",
-    Ti: "",
-    Al: "",
-    V: "",
-    Sn: "",
-    Mn: "",
-    Zr: "",
-    Mo: "",
-    Cu: "",
-    Cr: "",
-    Si: "",
-    Others: "",
-  },
+  
   {
     "Material type": "Ti 230",
     Ti: "Bal",
