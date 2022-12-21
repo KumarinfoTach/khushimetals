@@ -26,24 +26,28 @@ export const Footer = () => {
             <Link href="/productModi"> <i class="fa-solid fa-angle-right text-white mx-2"></i>Products</Link>
 
 
-            <Link href="/products"> <i class="fa-solid fa-angle-right text-white mx-2"></i>Special Alloys</Link>
-            <Link href="/gallery" > 
+            <Link href="/products"> <i class="fa-solid fa-angle-right text-white mx-2"></i>Metarials</Link>
+            {/* <Link href="/gallery" > 
             
-             <i class="fa-solid fa-angle-right text-white mx-2"></i>Gallery </Link>
+             <i class="fa-solid fa-angle-right text-white mx-2"></i>Gallery </Link> */}
             <Link href="/contact"> <i class="fa-solid fa-angle-right text-white mx-2"></i>Contact Us</Link>
           </div>
         </div>
         <div className="col-md-3 col-12 col-sm-6 d-flex flex-column align-items-center ">
           <h3>Hot products</h3>
           <div className="quick_link d-flex flex-column ">
-            <Link href="/Coils"> <i class="fa-solid fa-angle-right text-white mx-2"></i>Coils & Strips</Link>
-            <Link href="/Flanges">  <i class="fa-solid fa-angle-right text-white mx-2"></i>Flanges</Link>
-            <Link href="/Pipe_Fittings">  <i class="fa-solid fa-angle-right text-white mx-2"></i>Pipe Fittings</Link>
-            <Link href="/WIRE"> <i class="fa-solid fa-angle-right text-white mx-2"></i>Wire</Link>
-            <Link href="/SheetMain"> <i class="fa-solid fa-angle-right text-white mx-2"></i> Sheet & Plate </Link>
-            <Link href="/products/nickel_fasteners"> <i class="fa-solid fa-angle-right text-white mx-2"></i>Bolt  & Nut </Link>
-            <Link href="/Pipes_tubes"> <i class="fa-solid fa-angle-right text-white mx-2"></i>Pipes & Tubes </Link>
-            <Link href="/ROUND_BAR">  <i class="fa-solid fa-angle-right text-white mx-2"></i>Round Bar</Link>
+
+            <Link href="/Coils"> <i class="fa-solid fa-angle-right text-white mx-2"></i>Cobalt Alloys Scrap
+</Link>
+            <Link href="/Flanges">  <i class="fa-solid fa-angle-right text-white mx-2"></i>Nickel Alloys Scrap
+</Link>
+            <Link href="/Pipe_Fittings">  <i class="fa-solid fa-angle-right text-white mx-2"></i>Tungsten Alloys Scrap
+</Link>
+            <Link href="/SheetMain"> <i class="fa-solid fa-angle-right text-white mx-2"></i> Titanium & Tantalum Scrap
+ </Link>
+            
+            <Link href="/Pipes_tubes"> <i class="fa-solid fa-angle-right text-white mx-2"></i>Stainless Steel Scraps </Link>
+         
           </div>
         </div>
         <div className="col-md-3 col-12 col-sm-6 text-center">

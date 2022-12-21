@@ -16,7 +16,7 @@ import img2 from "../public/Images/gImg_b.jpg"
 import Gimg  from "../public/Images/GImg.jpg"
 import contact_img from "../public/Images/contact_img.jpg"
 import Carousel2 from "../Components/Slider_p";
-import { Our_products_data } from "../public/Data/DataJs";
+import { Our_products_data,industryData } from "../public/Data/DataJs";
 import Link from "next/link";
 
 const Home_main = () => {
@@ -170,7 +170,30 @@ return(<div className="col-12 col-md-3 col-sm-6 shadow_b" key={index}>
             </div>
           </div>
         </div>
+        <div className={styles.applicaton_section}>
+        <Heading_P text={{ text1: "APPLICATIONS", text2: "Industries Served" }} />
 
+        <div className={styles.industries_serve}>
+          <div className="row ">
+        {
+          industryData.map((item)=>{
+            return(
+              <div className="col-12 col-md-4 col-sm-6 my-2" >
+              <div className={styles.industry_item}>
+                <Image src={item.img} alt="image"></Image>
+                <div className={styles.industry_content}>
+                  <h4>{item.heading}</h4>
+                  <p>{item.text}</p>
+                </div>
+              </div>
+            </div>
+            )
+          })
+        }
+           
+          </div>
+        </div>
+        </div>
 
         <div className={styles.contact_sections}>
         <Image src={contact_img} className={styles.Gimage} alt="img" />
@@ -188,6 +211,8 @@ return(<div className="col-12 col-md-3 col-sm-6 shadow_b" key={index}>
            </div>
           </div>
         </div>
+
+      
       
       </div>
     </>

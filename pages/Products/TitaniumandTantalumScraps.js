@@ -1,7 +1,7 @@
 import React from 'react'
 import Products from '../../Components/Products'
 import alloys from "../../public/Images/AlloysImg.jpg"
-import { Cobaltalloys_data ,cobaltContent,cobalt_data1} from '../../public/Data/ProductData'
+import { TitaniumandTantalum_data,TitaniumandTantalum} from '../../public/Data/ProductData'
 const CobaltAlloysScraps = () => {
     const data_bredcrum =[{
         id:1,
@@ -13,12 +13,12 @@ const CobaltAlloysScraps = () => {
         link:"/Products/CobaltAlloysScraps"
     },{
         id:3,
-        name:"Cobalt Alloys Scrap",
-        link:"/Products/CobaltAlloysScraps"
+        name:"Titanium & Tantalum Alloys Scrap",
+        link:"/Products/TitaniumandTantalumScraps"
     }]
   return (
     <>
-    <Products data={{data_bredcrum,heading:"Cobalt Alloys Scrap",img:alloys,content:cobaltContent,table_data:Cobaltalloys_data,table_data1:cobalt_data1}}/>
+    <Products data={{data_bredcrum,heading:"Titanium & Tantalum Alloys Scrap",img:alloys,content:TitaniumandTantalum,table_data:TitaniumandTantalum_data}}/>
     </>
   )
 }

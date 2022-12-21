@@ -131,7 +131,7 @@ line-height: normal;
     .header_info{
         height: auto;
         background-color: var(--light-blue);
-        padding: var( --pd-lr);
+        padding: 0 5px;
     }
     .header_info .social_info a{
         font-size: 3rem !important;

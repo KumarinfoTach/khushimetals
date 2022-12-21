@@ -2,17 +2,17 @@ import '../styles/globals.css'
 import 'bootstrap/dist/css/bootstrap.css'
 import Layout from '../Components/Layout'
 import Router from 'next/router'
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 import Loader from '../Components/SmallComponents/Loader'
 
 
 
 function MyApp({ Component, pageProps }) {
-  const[loading,setLoading]=useState(false)
+  const[loading,setLoading]=useState(true)
   Router.events.on('routeChangeStart',(url)=>{
     console.log("rout hangetrat")
     setLoading(true)
-    document.getElementById("mobile_list").classList.add("d-none");
+    document.getElementById("mobile_list").classList.add("d_none_m");
    
   })
   Router.events.on('routeChangeComplete',(url)=>{
@@ -20,14 +20,19 @@ function MyApp({ Component, pageProps }) {
     setLoading(false)
 
   })
+useEffect(()=>{
+  setLoading(false)
+},[])
  
   return(
     <>
     {/* <Loader/> */}
-    {loading && <Loader/>}
-     <Layout>
+    {loading?<Loader/>:
+    <Layout>
     <Component {...pageProps} />
   </Layout>
+    }
+     
     </>
    
   )

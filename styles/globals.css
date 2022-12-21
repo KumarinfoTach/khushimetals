@@ -60,6 +60,13 @@ align-items: center;
 justify-content: center;
 gap:10px;
 }
+.responsive{
+  width: 100%;
+  overflow: auto;
+}
+.d_none_m{
+  display: block;
+}
 
 .d_flex_C_F_C{
   display: flex;
@@ -398,6 +405,9 @@ color: #00B274;
 
 }
 @media all and (max-width: 968px) {
+  .d_none_m{
+    display: none;
+  }
   nav{
     position: relative;
     display: block !important;
@@ -616,6 +626,7 @@ text-decoration: none;
 text-align: left;
 color: rgba(203, 197, 197, 0.67);
 transition: all 0.5s ease;
+white-space: nowrap;
 
 }
 .quick_link a:hover{
@@ -1047,6 +1058,7 @@ filter:  brightness(50%);
   min-width: 196px;
  
 }
+
 }
 .Slide_container{
   margin-top: 64px;
@@ -1249,6 +1261,11 @@ margin-top: 30px;
       
       color: #FFFFFF;
       
+      }
+      .Globel_shiping img {
+        width: 95%;
+        height: 100%;
+        border-radius: 30px;
       }
   
 }

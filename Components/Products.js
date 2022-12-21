@@ -3,9 +3,27 @@ import TopPages from "../Components/TopPages"
 import Bredcurm from './SmallComponents/bredcurm'
 import img1 from "../public/Images/contact_img.jpg"
 import styles from "../styles/Products.module.css"
+import { FaArrowRight} from "react-icons/fa";
 const Products = ({data}) => {
-   console.log("data yt",data.content)
-    
+   console.log("data yt",data.table_data)
+
+//    Object.keys
+var tableheader1,tableData1
+const tableheader=Object.keys(data.table_data[0])
+const tableData=data.table_data
+console.log(data.table_data1,"dateryu")
+if(data.table_data1 != undefined){
+    tableheader1=Object.keys(data.table_data1[0])
+   tableData1=data.table_data1
+}
+
+
+
+
+
+console.log("tableData fillter",tableData)
+
+    console.log(tableheader,"tableheader")
   return (
    <>
     <TopPages data={{heading:data.heading,img:data.img}}/>
@@ -17,24 +35,86 @@ const Products = ({data}) => {
 
         <h3>{data.content.text1}</h3>
         <ul>
-            {data.content.list.map((item,i)=>{
+            {data.content.list&&data.content.list.map((item,i)=>{
                 return(
-                    <li key={i}>{item}</li>
+                    <li key={i}><FaArrowRight/>{item}</li>
                 )
             })}
-        
         </ul>
 
-        <h3>We Trade This type of grades</h3>
-        <table>
+        <h4>We Trade This type of grades</h4>
+        <div className='responsive'>
+        <table className='table'>
             <thead>
                 <tr>
-                    <th>
+                    {tableheader.map((item)=>{
+return(
+    <th>
+        {item}
                         
                     </th>
+)
+                    })}
+                    
                 </tr>
             </thead>
+            <tbody>
+                {tableData.map((item)=>{
+                    return(
+                        <tr>
+                            {
+                            tableheader.map((each)=>{
+                                
+                                return(
+                                    <td>{item[each]==""?"-":item[each]}</td>
+                                )
+                            })
+                            }
+                        </tr>
+                    )
+                })}
+            </tbody>
         </table>
+        </div>
+       
+{
+   data.table_data1 != undefined?
+
+
+        <div className='responsive'>
+        <table className='table'>
+            <thead>
+                <tr>
+                    {tableheader1.map((item)=>{
+return(
+    <th>
+        {item}
+                        
+                    </th>
+)
+                    })}
+                    
+                </tr>
+            </thead>
+            <tbody>
+                {tableData1.map((item)=>{
+                    return(
+                        <tr>
+                            {
+                            tableheader1.map((each)=>{
+                                
+                                return(
+                                    <td>{item[each]==""?"-":item[each]}</td>
+                                )
+                            })
+                            }
+                        </tr>
+                    )
+                })}
+            </tbody>
+        </table>
+        </div>:null
+        }
     </div>
 
     </div>
