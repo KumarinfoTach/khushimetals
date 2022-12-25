@@ -63,38 +63,43 @@ const Header = () => {
       
       {
         name:"Cobalt",
-        link:"/Nickel_alloys"
+        link:"/Metarials/Cobalt"
       },
       {
         name:"Nickel ",
-        link:"/Nickel_alloys"
+        link:"/Metarials/Nickel"
       }
      ,
         
         {
         name:"Chromium",
-        link:""
+        link:"/Metarials/Chromium"
       }
       ,
         
       {
       name:"Niobium",
-      link:""
+      link:"/Metarials/Niobium"
     }
     ,
         
     {
     name:"Molybdenum",
-    link:""
+    link:"/Metarials/Molybdenum"
   }, 
   {
     name:"Tungsten",
-    link:"/Nickel_alloys"
+    link:"/Metarials/Tungsten"
   }
   ,
   {
-    name:"Titanium & Tantalum",
-    link:"/Nickel_alloys"
+    name:"Titanium",
+    link:"/Metarials/Titanium"
+  }
+  , 
+  {
+    name:"Tantalum",
+    link:"/Metarials/Tuntalum"
   }
   ,
   

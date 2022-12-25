@@ -43,6 +43,21 @@ margin-top: 10px;
     width: 100%;
     overflow: auto;
 }
+
+
+.materials_content{
+    padding: 30px 50px;
+}
+.materials_content h2{
+    margin-top: 20px;
+    font-size: 3rem;
+    border-bottom: 3px solid var(--primary-color);
+    font-family: var(--logo-fonts);
+    width: fit-content;
+}
+.materials_content p{
+    font-size: 1.7rem;
+}
 @media screen and (max-width: 776px) {
 
     .product_container{

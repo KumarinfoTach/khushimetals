@@ -1822,7 +1822,7 @@ export const TitaniumandTantalum = {
     "90 Ti- 6 Al-4 V / CP grade 1 / Cp grade 2 / 662 / 314 / 315 / 317 / 230 / 260- and most other grades",
 };
 
-const nickel = {
+export const nickel = {
   text1:
     "Nickel is used in many industrial & consumer products, including magnets, stainless steel, coinage, batteries, rechargeable electric guitar strings and special alloys. It is also used for plating and as a green tint in glass. Nickel is pre-eminently an alloy metal, and its chief use is in the nickel steels and nickel cast irons, of which there are many varieties.",
 
@@ -1831,9 +1831,12 @@ const nickel = {
 
   text3:
     "Nickel is often used in coins, or occasionally as a substitute for decorative silver. Nickel foam or nickel mesh is used in gas diffusion electrodes for alkaline fuel cells. We deal in various grades of Nickel Alloy Scrap, below mentioned are a few commonly known grades.",
+    text4:"Along with iron and cobalt, nickel is known as ferro-magnetic. When combined with the other metals and scrap metals, nickel scrap and nickel alloy scrap produce an unusually strong magnet. Nickel scrap and nickel alloy scrap can also be combined with other metals to conduct heat and electricity.Close to 90,00"
 };
-const cobalt = {
+export const cobalt = {
   tex1: "As a quality-oriented organization, we are focused to provide our clients excellent quality Cobalt Scrap. The offered cobalt scraps are provided in varied sizes, dimensions and other associated specifications according to the variegated customer’s requirements. Our vendor’s expert’s manufacture these cobalt scraps by using finest quality cobalt that we procure from the most trusted and reliable vendors of the industry. We are offering these cobalt scraps in numerous specifications to our customers.",
+  text2:"Cobalt scrap (Co Scrap) and cobalt alloy scrap (Co Alloy Scrap) play a vital roll in the recycle efforts of the U.S. The ratio of cobalt consumed is said to be a 50/50 ratio between new cobalt scrap and cobalt alloy scrap and old cobalt scrap and cobalt alloy scrap. Cobalt scrap and cobalt alloy scrap are recycled to be used in a variety of ways at Monico Alloys. Superalloys, chemical compounds, cutting tools, magnetic properties and specialty steels are only a few general areas for which cobalt scrap and cobalt alloy scrap are used.",
+
 
   Features: [
     "Excellent mechanical properties",
@@ -1850,7 +1853,7 @@ const cobalt = {
   ],
 };
 
-const Molybdenum = {
+export const Molybdenum_data = {
   text1:
     "The main use of Molybdenum is in the commercial and industrial industries where it plays a large role in manufacturing. Due to its relative strength and heat resistance it is also used by both the military and in space exploration.",
 
@@ -1858,14 +1861,14 @@ const Molybdenum = {
     "We are buyers and suppliers of Pure Mo/ Mo airmelt/Super alloys containing Mo.",
 };
 
-const Tungsten = {
+export const Tungsten_data = {
   text1:
     "Tungsten has the highest melting point of all metallic elements and is used to make filaments for incandescent light bulbs, fluorescent light bulbs and television tubes. Tungsten is also used as a target for X-ray production, as heating elements in electric furnaces and for parts of spacecraft and missiles which must withstand high temperatures. Tungsten is alloyed with steel to form tough metals that are stable at high temperatures. Tungsten-steel alloys are used to make such things as high speed cutting tools and rocket engine nozzles.",
 
   text2:
     "We are buyers supplier of- wire / hair wire / rod / sintered bar / targets / misc solids.",
 };
-const Chromium = {
+export const Chromium_data = {
   text1: "Chromium for high temperature uses are as follow.",
 
   text2:
@@ -1874,7 +1877,7 @@ const Chromium = {
   text3:
     "A high strength nickel chromium alloy, commonly referred to as IN-657, has been developed that provides the same good resistance to fuel oil ash corrosion exhibited by the standard 50Ni-50Cr alloys, but with improved creep and stress rupture properties.",
 };
-const Niobium = {
+export const Niobium_data = {
   text1:
     " Chemical properties are very similar to Tantalum. Niobium is used with Iron and other elements in stainless steel alloys.",
 
@@ -1887,7 +1890,7 @@ const Niobium = {
   text4:
     "We are buyers and suppliers of Pure Cr targets/ powders/ misc solids/ alloys containing Cr.",
 };
-const Tantalum = {
+export const Tantalum_data = {
   text1:
     "Tantalum usage has developed significantly over recent years and is now used extensively in the manufacture of capacitors in electronic applications such as mobile phones and computers; in super alloys with nickel and cobalt for the aerospace industry; in specialty metal products for the medical, pharmaceutical, and chemical industries; and in metal carbide for the metal working tools industry.",
 

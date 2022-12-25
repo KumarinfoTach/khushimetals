@@ -7,7 +7,7 @@ import styles from "../styles/about.module.css";
 import img_about from "../public/Images/about_us_main.png";
 import Pages_heading from "../Components/SmallComponents/Pages_heading";
 import logo from "../public/Images/logo.png"
-import topimg from "../public/Images/contact_img.jpg"
+import topimg from "../public/Images/about.png"
 const About = () => {
   const data_bredcrum =[{
     id:1,
