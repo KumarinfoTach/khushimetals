@@ -205,9 +205,10 @@ return(<div className="col-12 col-md-3 col-sm-6 shadow_b" key={index}>
 <h4>​Contact us for more information regarding our Products and alloys options, or request a quote for further pricing details today. Khushi Metals & Alloys is your trusted Scrap supplier and Exporter.</h4>
             </div>
             <div className ="col-12 col-md-6 d_flex_c " style={{"flexDirection":'column'}}>
-<button className={styles.button_contact}>
+<Link href="/Contact"
+><button className={styles.button_contact}>
   CONTACT US
-</button>
+</button></Link>
            </div>
           </div>
         </div>

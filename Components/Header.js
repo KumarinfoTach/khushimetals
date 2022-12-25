@@ -6,15 +6,10 @@ import { ReactSearchAutocomplete } from "react-search-autocomplete";
 import { AiOutlineSearch,AiOutlineMenu,AiFillPhone } from "react-icons/ai";
 import { FaCaretDown,FaSearch ,FaWhatsappSquare,FaFacebook,FaTwitter,FaWhatsapp} from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import Router from 'next/router';
 const Header = () => {
   const inputNameRef = useRef()
-// var jsdom = require('jsdom');
-// $ = require('jquery')(new jsdom.JSDOM().window);
-  /* Please ❤ this if you like it! */
-
-  // const { JSDOM } = require("jsdom");
-  // const myJSDom = new JSDOM (html);
-  // const $ = require('jquery')(myJSDom.window);
+const{pathname}=Router
 
   const header_data=[{
     name:"Home",
@@ -57,7 +52,7 @@ const Header = () => {
   },
   {
     name:"Metarials",
-    link:"/Metarials",
+    link:"#",
     label:"btn-3",
     submenu:[
       
@@ -155,53 +150,103 @@ function search_bar_show(){
 
 const items = [
   {
-    id: 0,
-    name: 'Cobol'
+    id:1,
+    name:"Cobalt",
+    link:"/Metarials/Cobalt"
   },
   {
-    id: 1,
-    name: 'JavaScript'
-  },
-  {
-    id: 2,
-    name: 'Basic'
-  },
-  {
-    id: 3,
-    name: 'PHP'
-  },
-  {
-    id: 4,
-    name: 'Java'
+    id:2,
+    name:"Nickel ",
+    link:"/Metarials/Nickel"
   }
+ ,
+    
+    {
+    id:3,
+    name:"Chromium",
+    link:"/Metarials/Chromium"
+  }
+  ,
+    
+  {
+    id:4,
+  name:"Niobium",
+  link:"/Metarials/Niobium"
+}
+,
+    
+{
+  id:5,
+name:"Molybdenum",
+link:"/Metarials/Molybdenum"
+}, 
+{
+  id:6,
+name:"Tungsten",
+link:"/Metarials/Tungsten"
+}
+,
+{
+  id:7,
+name:"Titanium",
+link:"/Metarials/Titanium"
+}
+, 
+{
+  id:7,
+name:"Tantalum",
+link:"/Metarials/Tuntalum"
+}
+,{
+  id:9,
+  name:"Cobalt Alloy Scrap",
+  link:"/Products/CobaltAlloysScraps"
+},
+{
+  id:10,
+  name:"Nickel alloys Scrap",
+  link:"/Products/NickelAlloysScraps"
+}
+,
+{
+  id:11,
+  name:"Tungsten Alloy Scrap",
+  link:"/Products/TungstenAlloysScraps"
+}
+,
+{
+  id:12,
+  name:"Titanium & Tantalum",
+  link:"/Products/TitaniumandTantalumScraps"
+}
+,
+  
+  {
+    id:13,
+  name:"Stainless Steel Scrap",
+  link:"/Products/StainlessSteelScraps"
+}
 ]
 
-const handleOnSearch = (string, results) => {
-  // onSearch will have as the first callback parameter
-  // the string searched and for the second the results.
-  console.log(string, results)
-}
-
-const handleOnHover = (result) => {
-  // the item hovered
-  console.log(result)
-}
 
 const handleOnSelect = (item) => {
   // the item selected
-  console.log(item)
-  alert("geh")
+
+
+  
+    Router.push(item.link)
+ 
+ 
 }
 
-const handleOnFocus = () => {
-  console.log('Focused')
-}
+
 
 const formatResult = (item) => {
+ 
   return (
     <>
      
-     <Link href=""><span style={{ display: 'block', textAlign: 'left' }} className={styles.search_link}>{item.name}</span></Link>
+     <Link href={item.link} key={item.id}><span style={{ display: 'block', textAlign: 'left' }} className={styles.search_link}>{item.name}</span></Link>
     </>
   )
 }
@@ -211,13 +256,13 @@ const formatResult = (item) => {
       <div className={styles.header_info}>
         <div className={styles.group_info}>
         <span className={styles.info}><AiFillPhone/> +91 8291870720</span>
-        <span className={styles.info}><MdEmail/> lalitmodi2014@gmail.com</span>
+        <span className={styles.info}><MdEmail/> khushimetalandalloy@gmail.com</span>
         </div>
 
         
         <span className={styles.social_info}>
 
-         <Link href='#' ><FaWhatsappSquare/></Link>
+         <Link  href="https://wa.me/+918291870720"  target="_blank"><FaWhatsappSquare/></Link>
          <Link href='#'><FaFacebook/></Link>
          <Link href='#'><FaTwitter/></Link>
 
@@ -279,7 +324,7 @@ const formatResult = (item) => {
           }}> <AiOutlineSearch/></button>
           <div className={styles.searchwrraper} id="sear_wrraper_box">
           <ReactSearchAutocomplete
-            items={header_data}
+            items={items}
             onSearch={handleOnSearch}
             onHover={handleOnHover}
             onSelect={handleOnSelect}

@@ -48,7 +48,13 @@
     color:rgba(19, 18, 18, 0.932);
 }
 .content_info h4{
-    font-size: 2rem;
+    font-size: 1.8rem;
+  
+}
+.content_info h5{
+    font-size: 1.8rem;
+    width: 80%;
+
 }
 .emails_box{
     margin-left: 20px;
@@ -64,6 +70,7 @@
     align-items: flex-start;
     justify-content: center;
     gap: 20px;
+    width: 80%;
 }
 .item_box:hover{
     background-color: rgba(19, 18, 18, 0.932);

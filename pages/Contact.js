@@ -42,8 +42,8 @@ const Contact = () => {
         </div>
          <div  className={styles.content_info}>
           <div className={styles.email_box}>
-          <h4>khusimetalsandalloy@gmail.com</h4>
-          <h4>info@example.com</h4>
+          <h4>khushimetalandalloy@gmail.com</h4>
+          <h4>lalitmodi2014@gmail.com</h4>
           </div>
           <span><FaArrowRight/></span>
          </div>
@@ -62,7 +62,7 @@ const Contact = () => {
         </div>
          <div  className={styles.content_info}>
           <div className={styles.email_box}>
-          <h4>+91 829870720</h4>
+          <h4>+91 8291870720</h4>
           <h4>+91 8080059591</h4>
           </div>
           <span><FaArrowRight/></span>
@@ -83,8 +83,8 @@ const Contact = () => {
         </div>
          <div  className={styles.content_info}>
           <div className={styles.email_box}>
-          <h4>khusimetalsandalloy@gmail.com</h4>
-          <h4>info@example.com</h4>
+          <h5>Shop No - 02, Ground Floor, 91, Haji Mansion, 3rd Kamithipura Lane, Mumbai Central, Mumbai - 400008</h5>
+          
           </div>
           <span><FaArrowRight/></span>
          </div>
@@ -142,7 +142,7 @@ const Contact = () => {
 
     </div>
 <div className={styles.map_text}>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.2559141006313!2d72.82279231437515!3d18.964302060403238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1da1c1a851d090d9!2zMTjCsDU3JzUxLjUiTiA3MsKwNDknMjkuOSJF!5e0!3m2!1sen!2sin!4v1670867006118!5m2!1sen!2sin"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.2572958992873!2d72.8250358!3d18.964240999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cff3786a5f7f%3A0x75a2f3bdc9f03e33!2sKhushi%20metal%20and%20alloys!5e0!3m2!1sen!2sin!4v1671987232113!5m2!1sen!2sin"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 
     </div>

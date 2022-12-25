@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import { FaWhatsapp,FaInstagram,FaLinkedinIn,FaTwitter } from "react-icons/fa";
+import { FaWhatsapp,FaInstagram,FaLinkedinIn,FaTwitter,FaAngleRight } from "react-icons/fa";
 
 export const Footer = () => {
   return (
@@ -21,32 +21,32 @@ export const Footer = () => {
         <div className="col-md-3 col-12 col-sm-6 d-flex flex-column align-items-center">
           <h3>Quick links</h3>
           <div className="quick_link d-flex flex-column ">
-            <Link href="/"> <i class="fa-solid fa-angle-right text-white mx-2"></i>Home</Link>
-            <Link href="/about"> <i class="fa-solid fa-angle-right text-white mx-2"></i>AboutUs</Link>
-            <Link href="/productModi"> <i class="fa-solid fa-angle-right text-white mx-2"></i>Products</Link>
+            <Link href="/"> <FaAngleRight/>Home</Link>
+            <Link href="/about"> <FaAngleRight/>AboutUs</Link>
+            <Link href="/productModi"><FaAngleRight/>Products</Link>
 
 
-            <Link href="/products"> <i class="fa-solid fa-angle-right text-white mx-2"></i>Metarials</Link>
+            <Link href="/products"> <FaAngleRight/>Metarials</Link>
             {/* <Link href="/gallery" > 
             
              <i class="fa-solid fa-angle-right text-white mx-2"></i>Gallery </Link> */}
-            <Link href="/contact"> <i class="fa-solid fa-angle-right text-white mx-2"></i>Contact Us</Link>
+            <Link href="/contact"> <FaAngleRight/>Contact Us</Link>
           </div>
         </div>
         <div className="col-md-3 col-12 col-sm-6 d-flex flex-column align-items-center ">
           <h3>Hot products</h3>
           <div className="quick_link d-flex flex-column ">
 
-            <Link href="/Coils"> <i class="fa-solid fa-angle-right text-white mx-2"></i>Cobalt Alloys Scrap
+            <Link href="/Coils"> <FaAngleRight/>Cobalt Alloys Scrap
 </Link>
-            <Link href="/Flanges">  <i class="fa-solid fa-angle-right text-white mx-2"></i>Nickel Alloys Scrap
+            <Link href="/Flanges">  <FaAngleRight/>Nickel Alloys Scrap
 </Link>
-            <Link href="/Pipe_Fittings">  <i class="fa-solid fa-angle-right text-white mx-2"></i>Tungsten Alloys Scrap
+            <Link href="/Pipe_Fittings">  <FaAngleRight/>Tungsten Alloys Scrap
 </Link>
-            <Link href="/SheetMain"> <i class="fa-solid fa-angle-right text-white mx-2"></i> Titanium & Tantalum Scrap
+            <Link href="/SheetMain"> <FaAngleRight/> Titanium & Tantalum Scrap
  </Link>
             
-            <Link href="/Pipes_tubes"> <i class="fa-solid fa-angle-right text-white mx-2"></i>Stainless Steel Scraps </Link>
+            <Link href="/Pipes_tubes"> <FaAngleRight/>Stainless Steel Scraps </Link>
          
           </div>
         </div>
@@ -88,16 +88,16 @@ export const Footer = () => {
              <div className='footer_social'>
              {/* <i class="fa-brands fa-facebook-f"></i> */}
              <div className='links_s'>
-             <a href='https://wa.me/9321271527' target="_blank"> <span class="" ><FaWhatsapp/></span></a>
+             <a href="https://wa.me/+918291870720"  target="_blank"> <span class="" ><FaWhatsapp/></span></a>
              </div>
              <div className='links_s'>
-             <a href="https://www.instagram.com/invites/contact/?i=1x8zwnbbom1f1&utm_content=mh9pec9" target="_blank">  <span><FaInstagram/></span></a>
+             <a href="#" target="_blank">  <span><FaInstagram/></span></a>
               </div>
               <div className='links_s'>
-              <a href="https://www.linkedin.com/in/modi-metals-5a1ba9200" target="_blank">  <span class=""><FaLinkedinIn/></span></a>
+              <a href="#" target="_blank">  <span class=""><FaLinkedinIn/></span></a>
               </div>
               <div className='links_s'>
-              <a href="https://twitter.com/MODI_METALS?t=_5ujRniaI6uWXLPosEmdJw&s=09" className="" target="_blank">  <span class=""><FaTwitter/></span></a>
+              <a href="#" className="" target="_blank">  <span class=""><FaTwitter/></span></a>
               </div>
             
           
