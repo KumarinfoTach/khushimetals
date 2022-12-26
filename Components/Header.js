@@ -325,10 +325,9 @@ const formatResult = (item) => {
           <div className={styles.searchwrraper} id="sear_wrraper_box">
           <ReactSearchAutocomplete
             items={items}
-            onSearch={handleOnSearch}
-            onHover={handleOnHover}
+            
             onSelect={handleOnSelect}
-            onFocus={handleOnFocus}
+           
             autoFocus
             formatResult={formatResult}
           />
