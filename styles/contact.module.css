@@ -86,6 +86,8 @@
 
 .enquiry_box input{
     display: block;
+    font-size: 1.5rem;
+    padding-left:10px;
 }
 
 .massssge_box{
@@ -118,6 +120,8 @@ color: var(--secondry-color);
     height: 50px;
     border: 1px solid var(--text-black);
     border-radius: 4px;
+    font-size: 1.5rem;
+    padding-left: 10px;
 }
 .form_massage button{
     border: none;
