@@ -31,7 +31,7 @@ const handleSubmit = (e)=>{
 
   e.preventDefault();
   if(values.name== ""||values.email==""||values.phone==""||values.message==""){
-alert("Please fill all then submit")
+alert("Please fill all fields then submit")
   }else{
     emailjs.send('service_iokec9y', 'template_j8a42rs', values, 'TbJ69shjd3CH_cpzA')
     .then(response => {

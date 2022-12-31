@@ -29,7 +29,7 @@ const About = () => {
           <div className="row">
             <div className="col-12 col-md-4">
               <h3 className="heading_about_m">About The Company</h3>
-              <Image src={img_about} />
+              <Image src={img_about} alt="sliderimage" />
             </div>
             <div className="col-md-8">
               <h3 className="heading_about_d">About The Company</h3>
@@ -186,7 +186,7 @@ const About = () => {
        </div>
        <div className={styles.logo_cmp}>
 
-       <Image src={logo}></Image>
+       <Image src={logo} alt="sliderimage"></Image>
        </div>
       </div>
     </>

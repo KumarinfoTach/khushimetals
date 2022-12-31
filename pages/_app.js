@@ -10,13 +10,13 @@ import Loader from '../Components/SmallComponents/Loader'
 function MyApp({ Component, pageProps }) {
   const[loading,setLoading]=useState(true)
   Router.events.on('routeChangeStart',(url)=>{
-    console.log("rout hangetrat")
+
     setLoading(true)
     document.getElementById("mobile_list").classList.add("d_none_m");
    
   })
   Router.events.on('routeChangeComplete',(url)=>{
-    console.log("rout ompletete")
+  
     setLoading(false)
 
   })

@@ -46,7 +46,7 @@ const{pathname}=Router
       
       {
       name:"Stainless Steel Scrap",
-      link:"/Products/StainlessSteelScraps"
+      link:"/Products/StainlessSteel"
     }
   ]
   },
@@ -263,8 +263,7 @@ const formatResult = (item) => {
         <span className={styles.social_info}>
 
          <Link  href="https://wa.me/+918291870720"  target="_blank"><FaWhatsappSquare/></Link>
-         <Link href='#'><FaFacebook/></Link>
-         <Link href='#'><FaTwitter/></Link>
+        
 
         </span>
       </div>
@@ -287,10 +286,10 @@ const formatResult = (item) => {
       <ul id="mobile_list">
         {header_data.map((item,index)=>{
           return(
-            <li>{item.submenu?<label for={item.label} class="show">{item.name} +</label>:null}
+            <li key={index}>{item.submenu?<label for={item.label} class="show">{item.name} +</label>:null}
               
               
-              <Link href={item.link} key={index}>{item.name} {item.submenu?<FaCaretDown/>
+              <Link href={item.link} >{item.name} {item.submenu?<FaCaretDown/>
             :null}</Link>
             {item.submenu?<input type="checkbox" id={item.label}/>:null}
             {item.submenu?<ul>
@@ -298,7 +297,7 @@ const formatResult = (item) => {
             item.submenu.map((each,index)=>{
               return(
                
-            <li><Link href={each.link} key={index} >{each.name}</Link></li>
+            <li key={index} ><Link href={each.link} key={index} >{each.name}</Link></li>
           
               )
             }):null
@@ -327,7 +326,7 @@ const formatResult = (item) => {
             items={items}
             
             onSelect={handleOnSelect}
-           
+           placeholder="Search Products here...!"
             autoFocus
             formatResult={formatResult}
           />

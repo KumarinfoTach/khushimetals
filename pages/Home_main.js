@@ -35,7 +35,7 @@ const Home_main = () => {
                 requirement.
               </p>
 
-              <Image className={styles.about_img} src={about_img}></Image>
+              <Image className={styles.about_img} src={about_img} alt="sliderimage"></Image>
             </div>
           </div>
           <div className="col-md-6 d-flex align-items-end">
@@ -58,7 +58,7 @@ const Home_main = () => {
           <div className="row">
             <div className="col-md-4 pd_0 position-relative">
               <div className={styles.scrap_img}>
-                <Image className={styles.img_prd} src={scrap_img}></Image>
+                <Image className={styles.img_prd} src={scrap_img} alt="sliderimage"></Image>
                 <dv className={styles.div_trns}></dv>
                 <div className={styles.pd_details}>
                   <h3>SCRAP</h3>
@@ -70,7 +70,7 @@ const Home_main = () => {
             </div>
             <div className="col-md-4 pd_0 position-relative">
               <div className={styles.scrap_img}>
-                <Image className={styles.img_prd} src={casting_img}></Image>
+                <Image className={styles.img_prd} src={casting_img} alt="sliderimage"></Image>
                 <dv className={styles.div_trns}></dv>
                 <div className={styles.pd_details}>
                   <h3>CASTING</h3>
@@ -84,7 +84,7 @@ const Home_main = () => {
             </div>
             <div className="col-md-4 pd_0 position-relative">
               <div className={styles.scrap_img}>
-                <Image className={styles.img_prd} src={turning_img}></Image>
+                <Image className={styles.img_prd} src={turning_img} alt="sliderimage"></Image>
                 <div className={styles.div_trns}></div>
                 <div className={styles.pd_details}>
                   <h3>TURNING</h3>

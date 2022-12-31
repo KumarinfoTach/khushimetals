@@ -1,5 +1,4 @@
 export const Cobaltalloys_data = [
-  
   {
     "Material Type": "Stellite® 4",
     Co: "53.00",
@@ -287,7 +286,6 @@ export const Cobaltalloys_data = [
   },
 ];
 export const cobalt_data1 = [
-
   {
     "Cobalt Iron Alloys": "Permendur",
     Co: "50.00",
@@ -1170,7 +1168,6 @@ export const Nickel_Alloy_data = [
 ];
 
 export const Nickel_Alloy_2nd_data = [
-  
   {
     "Material type": "PWA 1480",
     Ni: "Bal",
@@ -1341,7 +1338,6 @@ export const Nickel_Alloy_2nd_data = [
   },
 ];
 export const Tungsten_alloys_data = [
- 
   {
     "Material type": "Mallory 1000",
     W: "90.00",
@@ -1432,10 +1428,8 @@ export const Tungsten_alloys_data = [
     C: "6.00",
     Others: "TaC 3%/ TiC 4%",
   },
-  
 ];
 export const TitaniumandTantalum_data = [
-  
   {
     "Material type": "CP Grade 1",
     Ti: "Bal",
@@ -1492,7 +1486,7 @@ export const TitaniumandTantalum_data = [
     Si: "",
     Others: "0.5% O2/ 0.4% Fe",
   },
-  
+
   {
     "Material type": "Ti 6-6-2",
     Ti: "Bal",
@@ -1563,7 +1557,7 @@ export const TitaniumandTantalum_data = [
     Si: "",
     Others: "",
   },
-  
+
   {
     "Material type": "Ti 230",
     Ti: "Bal",
@@ -1805,6 +1799,21 @@ export const cobaltContent = {
     "Stellite 31 / Stellite 25 / Stellite 188 / Stellite 4 / Stellite 6 / Stellite 8 (F75) / Stellite 3 / Stellite 12 / Stellite 21 / Stellite 30 / Stellite X45 / Umco 50 / Umco 51 / MAR M 509 / FSX 414 / MP35N / Permendur 2V / Co refinery",
   ],
 };
+export const Stainless_Steel_Content = {
+  text1:
+    "Stainless steel is the name of a family of iron-based alloys known for their corrosion and heat resistance. One of the main characteristics of stainless steel is its minimum chromium content of 10.5%, which gives it its superior resistance to corrosion in comparison to other types of steels. Like other steels, stainless steel is composed primarily from iron and carbon, but with the addition of several other alloying elements, the most prominent being chromium. Other common alloys found in stainless steel are nickel, magnesium, molybdenum, and nitrogen..",
+  list: [
+    "Corrosion resistant",
+"High tensile strength",
+"Very durable",
+"Temperature resistant",
+"Easy formability and fabrication",
+"Low-maintenance (long lasting)",
+"Attractive appearance",
+"Environmentally friendly (recyclable)",
+    
+  ],
+};
 export const tungstenContent = {
   text1:
     "Tungsten carbide (WC) is an extremely hard tungsten compound. It is used in the tips of drill bits, high speed cutting tools and in mining machinery.",
@@ -1831,12 +1840,13 @@ export const nickel = {
 
   text3:
     "Nickel is often used in coins, or occasionally as a substitute for decorative silver. Nickel foam or nickel mesh is used in gas diffusion electrodes for alkaline fuel cells. We deal in various grades of Nickel Alloy Scrap, below mentioned are a few commonly known grades.",
-    text4:"Along with iron and cobalt, nickel is known as ferro-magnetic. When combined with the other metals and scrap metals, nickel scrap and nickel alloy scrap produce an unusually strong magnet. Nickel scrap and nickel alloy scrap can also be combined with other metals to conduct heat and electricity.Close to 90,00"
+  text4:
+    "Along with iron and cobalt, nickel is known as ferro-magnetic. When combined with the other metals and scrap metals, nickel scrap and nickel alloy scrap produce an unusually strong magnet. Nickel scrap and nickel alloy scrap can also be combined with other metals to conduct heat and electricity.Close to 90,00",
 };
 export const cobalt = {
   tex1: "As a quality-oriented organization, we are focused to provide our clients excellent quality Cobalt Scrap. The offered cobalt scraps are provided in varied sizes, dimensions and other associated specifications according to the variegated customer’s requirements. Our vendor’s expert’s manufacture these cobalt scraps by using finest quality cobalt that we procure from the most trusted and reliable vendors of the industry. We are offering these cobalt scraps in numerous specifications to our customers.",
-  text2:"Cobalt scrap (Co Scrap) and cobalt alloy scrap (Co Alloy Scrap) play a vital roll in the recycle efforts of the U.S. The ratio of cobalt consumed is said to be a 50/50 ratio between new cobalt scrap and cobalt alloy scrap and old cobalt scrap and cobalt alloy scrap. Cobalt scrap and cobalt alloy scrap are recycled to be used in a variety of ways at Monico Alloys. Superalloys, chemical compounds, cutting tools, magnetic properties and specialty steels are only a few general areas for which cobalt scrap and cobalt alloy scrap are used.",
-
+  text2:
+    "Cobalt scrap (Co Scrap) and cobalt alloy scrap (Co Alloy Scrap) play a vital roll in the recycle efforts of the U.S. The ratio of cobalt consumed is said to be a 50/50 ratio between new cobalt scrap and cobalt alloy scrap and old cobalt scrap and cobalt alloy scrap. Cobalt scrap and cobalt alloy scrap are recycled to be used in a variety of ways at Monico Alloys. Superalloys, chemical compounds, cutting tools, magnetic properties and specialty steels are only a few general areas for which cobalt scrap and cobalt alloy scrap are used.",
 
   Features: [
     "Excellent mechanical properties",
@@ -1897,3 +1907,210 @@ export const Tantalum_data = {
   text2:
     "We are buyers and suppliers off all grades of Ta- ingot / turnings / sheet / plate / targets. We can also offer Ta refinery- anodes / capacitors / powders / furnace slag.",
 };
+
+export const stainless_steel_data = [
+  {
+    Type: "303",
+    Cr: "17.00-19.00",
+    Ni: "8.00-10.00",
+    Cmax: "0.15",
+    "Other Elements": " S 0.15 min",
+   
+
+  },
+  {
+    Type: "303 Se",
+    Cr: "17.00-19.00",
+    Ni: "8.00-10.00",
+    Cmax: "0.15",
+    "Other Elements": "Se 0.15 min",
+  
+ 
+  },
+  {
+    Type: "304",
+    Cr: "18.00-20.00",
+    Ni: "8.00-10.00",
+    Cmax: "0.08",
+    "Other Elements": " – ",
+    
+  },
+  {
+    Type: "304L",
+    Cr: "18.00-20.00",
+    Ni: "8.00-10.00",
+    Cmax: "0.03",
+    "Other Elements": " – ",
+    
+  },
+  {
+    Type: "309",
+    Cr: "22.00-24.00",
+    Ni: "12.00-15.00",
+    Cmax: "0.20",
+    "Other Elements": " – ",
+   
+    
+  },
+  {
+    Type: "310",
+    Cr: "24.00-26.00",
+    Ni: "19.00-22.00",
+    Cmax: "0.20",
+    "Other Elements": " – ",
+    
+    
+  },
+  {
+    Type: "316",
+    Cr: "16.00-18.00",
+    Ni: "10.00-14.00",
+    Cmax: "0.08",
+    "Other Elements": "Mo 2.00-3.00",
+    
+    
+  },
+  {
+    Type: "316L",
+    Cr: "16.00-18.00",
+    Ni: "10.00-14.00",
+    Cmax: "0.20",
+    "Other Elements": "Mo 2.00-3.00",
+    
+    
+  },
+  {
+    Type: "317",
+    Cr: "18.00-20.00",
+    Ni: "11.00-15.00",
+    Cmax: "0.08",
+    "Other Elements": "Mo 3.00-4.00",
+   
+    
+  },
+  {
+    Type: "321",
+    Cr: "17.00-19.00",
+    Ni: "9.00-12.00",
+    Cmax: "0.08",
+    "Other Elements": "Ti 5 x C. min",
+    
+    
+  },
+  {
+    Type: "347",
+    Cr: "17.00-19.00",
+    Ni: "9.00-13.00",
+    Cmax: ".008",
+    "Other Elements": "Cb + Ta 10 x C. min",
+   
+    
+  },
+  {
+    Type: "348",
+    Cr: "17.00-19.00",
+    Ni: "9.00-13.00",
+    Cmax: "0.08",
+    "Other Elements": "Ta 0.10 max Cb 0.20 maxCb + Ta 10 x C min",
+   
+    
+  },
+  {
+    Type: "410",
+    Cr: "11.50-13.50",
+    Ni: "-",
+    Cmax: "0.15",
+    "Other Elements": "-",
+    
+    
+  },
+  {
+    Type: "416",
+    Cr: "12.00-14.00",
+    Ni: "-",
+    Cmax: "0.15",
+   
+    
+  },
+  {
+    Type: "420",
+    Cr: "12.00-14.00",
+    Ni: "-",
+    Cmax: "0.15 min",
+    "Other Elements": "-",
+   
+    
+  },
+  {
+    Type: "430",
+    Cr: "14.00-18.00",
+    Ni: "-",
+    Cmax: "0.12",
+    "Other Elements": "-",
+   
+    
+  },
+  {
+    Type: "430 F",
+    Cr: "14.00-18.00",
+    Ni: "-",
+    Cmax: "0.12",
+    "Other Elements": "S 0.15 min",
+   
+    
+  },
+  {
+    Type: "440A440B440C",
+    Cr: "16.00-18.0016.00-18.0016.00-18.00",
+    Ni: "-",
+    Cmax: "0.60-0.750.75-0.950.95-1.20",
+    "Other Elements": "-",
+   
+    
+  },
+  {
+    Type: "446",
+    Cr: "23.00-27.00",
+    Ni: "-",
+    Cmax: "0.20",
+    "Other Elements": "-",
+   
+    
+  },
+  {
+    Type: "15-5 PH",
+    Cr: "14.00-15.50",
+    Ni: "3.50-5.50",
+    Cmax: "0.07",
+    "Other Elements": "Cu 2.50-4.50",
+ 
+    
+  },
+  {
+    Type: "PH 15-7 Mo",
+    Cr: "14.00-16.00",
+    Ni: "6.50-7.75",
+    Cmax: "0.09",
+    "Other Elements": "Mo 2.00-3.00Al 0.75-1.50",
+   
+    
+  },
+  {
+    Type: "17-4 PH",
+    Cr: "15.50-17.50",
+    Ni: "3.00-5.00",
+    Cmax: "0.07",
+    "Other Elements": "Cu 3.00-5.00",
+   
+    
+  },
+  {
+    Type: "17-7 PH",
+    Cr: "16.00-18.00",
+    Ni: "6.50-7.75",
+    Cmax: "0.09",
+    "Other Elements": "AL 0.75-1.25",
+   
+    
+  },
+];

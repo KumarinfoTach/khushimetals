@@ -47,9 +47,9 @@ console.log("tableData fillter",tableData)
         <table className='table'>
             <thead>
                 <tr>
-                    {tableheader.map((item)=>{
+                    {tableheader.map((item,index)=>{
 return(
-    <th>
+    <th key={index}>
         {item}
                         
                     </th>
@@ -59,14 +59,14 @@ return(
                 </tr>
             </thead>
             <tbody>
-                {tableData.map((item)=>{
+                {tableData.map((item,i)=>{
                     return(
-                        <tr>
+                        <tr key={i}>
                             {
-                            tableheader.map((each)=>{
+                            tableheader.map((each,i)=>{
                                 
                                 return(
-                                    <td>{item[each]==""?"-":item[each]}</td>
+                                    <td key={i}>{item[each]==""?"-":item[each]}</td>
                                 )
                             })
                             }
@@ -85,9 +85,9 @@ return(
         <table className='table'>
             <thead>
                 <tr>
-                    {tableheader1.map((item)=>{
+                    {tableheader1.map((item,i)=>{
 return(
-    <th>
+    <th key={i}>
         {item}
                         
                     </th>
@@ -97,14 +97,14 @@ return(
                 </tr>
             </thead>
             <tbody>
-                {tableData1.map((item)=>{
+                {tableData1.map((item,i)=>{
                     return(
-                        <tr>
+                        <tr key={i}>
                             {
-                            tableheader1.map((each)=>{
+                            tableheader1.map((each,i)=>{
                                 
                                 return(
-                                    <td>{item[each]==""?"-":item[each]}</td>
+                                    <td key={i}>{item[each]==""?"-":item[each]}</td>
                                 )
                             })
                             }

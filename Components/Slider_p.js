@@ -56,7 +56,7 @@ import "keen-slider/keen-slider.min.css";
         <div className="keen-slider__slide number-slide1">
       
         <div className="Slide_r">
-        <Image src={item.img}></Image>
+        <Image src={item.img} alt="sliderimage"></Image>
         <h5>{item.heading}</h5>
         </div>
       </div>
