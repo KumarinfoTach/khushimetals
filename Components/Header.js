@@ -150,89 +150,77 @@ function search_bar_show(){
 
 const items = [
   {
-    id:1,
-    name:"Cobalt",
-    link:"/Metarials/Cobalt"
+    id: 1,
+    name: "Cobalt",
+    link: "/Metarials/Cobalt",
   },
   {
-    id:2,
-    name:"Nickel ",
-    link:"/Metarials/Nickel"
-  }
- ,
-    
-    {
-    id:3,
-    name:"Chromium",
-    link:"/Metarials/Chromium"
-  }
-  ,
-    
+    id: 2,
+    name: "Nickel ",
+    link: "/Metarials/Nickel",
+  },
   {
-    id:4,
-  name:"Niobium",
-  link:"/Metarials/Niobium"
-}
-,
-    
-{
-  id:5,
-name:"Molybdenum",
-link:"/Metarials/Molybdenum"
-}, 
-{
-  id:6,
-name:"Tungsten",
-link:"/Metarials/Tungsten"
-}
-,
-{
-  id:7,
-name:"Titanium",
-link:"/Metarials/Titanium"
-}
-, 
-{
-  id:7,
-name:"Tantalum",
-link:"/Metarials/Tuntalum"
-}
-,{
-  id:9,
-  name:"Cobalt Alloy Scrap",
-  link:"/Products/CobaltAlloysScraps"
-},
-{
-  id:10,
-  name:"Nickel alloys Scrap",
-  link:"/Products/NickelAlloysScraps"
-}
-,
-{
-  id:11,
-  name:"Tungsten Alloy Scrap",
-  link:"/Products/TungstenAlloysScraps"
-}
-,
-{
-  id:12,
-  name:"Titanium & Tantalum",
-  link:"/Products/TitaniumandTantalumScraps"
-}
-,
-  
+    id: 3,
+    name: "Chromium",
+    link: "/Metarials/Chromium",
+  },
   {
-    id:13,
-  name:"Stainless Steel Scrap",
-  link:"/Products/StainlessSteelScraps"
-}
-]
+    id: 4,
+    name: "Niobium",
+    link: "/Metarials/Niobium",
+  },
+  {
+    id: 5,
+    name: "Molybdenum",
+    link: "/Metarials/Molybdenum",
+  },
+  {
+    id: 6,
+    name: "Tungsten",
+    link: "/Metarials/Tungsten",
+  },
+  {
+    id: 7,
+    name: "Titanium",
+    link: "/Metarials/Titanium",
+  },
+  {
+    id: 8,
+    name: "Tantalum",
+    link: "/Metarials/Tuntalum",
+  },
+  {
+    id: 9,
+    name: "Cobalt Alloy Scrap",
+    link: "/Products/CobaltAlloysScraps",
+  },
+  {
+    id: 10,
+    name: "Nickel alloys Scrap",
+    link: "/Products/NickelAlloysScraps",
+  },
+  {
+    id: 11,
+    name: "Tungsten Alloy Scrap",
+    link: "/Products/TungstenAlloysScraps",
+  },
+  {
+    id: 12,
+    name: "Titanium & Tantalum",
+    link: "/Products/TitaniumandTantalumScraps",
+  },
+  {
+    id: 13,
+    name: "Stainless Steel Scrap",
+    link: "/Products/StainlessSteel",
+  },
+];
 
 
 const handleOnSelect = (item) => {
   // the item selected
 
-
+console.log("item", item.link);
   
     Router.push(item.link)
  
@@ -246,9 +234,16 @@ const formatResult = (item) => {
   return (
     <>
      
-     <Link href={item.link} key={item.id}><span style={{ display: 'block', textAlign: 'left' }} className={styles.search_link}>{item.name}</span></Link>
+        <span
+          key={item.id}
+          style={{ display: "block", textAlign: "left" }}
+          className={styles.search_link}
+        >
+          {item.name}
+        </span>
+      
     </>
-  )
+  );
 }
   return (
     <div className={styles.Container}>

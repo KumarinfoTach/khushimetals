@@ -17,9 +17,9 @@ const Metarials = ({data}) => {
     <Bredcurm data={{data_bredcrum:data.data_bredcrum}}/>
      <h2>{data.heading}</h2>
      {
-      data_key.map((item)=>{
+      data_key.map((item,i)=>{
         return(
-          <p>{data.content[item]}</p>
+          <p key={i}>{data.content[item]}</p>
         )
       })
      }

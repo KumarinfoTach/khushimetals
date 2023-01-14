@@ -61,6 +61,7 @@
 }
 .search_link{
     padding: 0px;
+    cursor: pointer;
 
 }
 .search_link a{
