@@ -16,9 +16,7 @@ export const Footer = () => {
               can offer you all the material Ex-Stock Mumbai at most Competitive
               rates & with Batch Test Certificate.
             </p>
-            {/* <p>
-          We would like to introduce ourselves as a one of the leading Importer & Stockiest of all kind of Nickel Base Alloy, Titanium Alloys, etc in Sheets, Plates, Coils, Strips, Pipes & Tubes, Round Bars, Square Bars, Hex Bars, Circle, Filler Wires, Welding Electrodes etc in India. We can offer you all the material Ex-Stock Mumbai at most Competitive rates & with Batch Test Certificate.
-          </p> */}
+          
           </div>
           <div className="col-md-3 col-12 col-sm-6 d-flex flex-column align-items-center">
             <h3>Quick links</h3>
@@ -43,9 +41,7 @@ export const Footer = () => {
                 <FaAngleRight />
                 Metarials
               </Link>
-              {/* <Link href="/gallery" > 
-            
-             <i class="fa-solid fa-angle-right text-white mx-2"></i>Gallery </Link> */}
+             
               <Link href="/contact">
                 {" "}
                 <FaAngleRight />

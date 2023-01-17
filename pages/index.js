@@ -10,7 +10,7 @@ export default function Home() {
       <Head>
         <title>
           Khushi metal & Alloys | Hi-Nickel Alloy, Stainless Steel, Round Bar,
-          Centrifugal Pipe - Khushimetalandalloys.com
+          Centrifugal Pipe - Khushimetal.com
         </title>
         <meta
           name="description"
@@ -20,8 +20,11 @@ export default function Home() {
           name="keywords"
           content="Khushi Metal,Khushi Metals,Khushi Metal and steel ,Khushi steel,Khushi steel & alloys,Khushi metals and alloy, steel scraps, alloys scrap mumbai, alloys scrap india"
         />
-        <meta name="author" content="Khushimetalandalloys.com" />
-
+        <meta name="author" content="Khushimetal.com" />
+        <meta
+          name="google-site-verification"
+          content="wsVVMilTgVZRkjsPkBBTM4KKbhuPjYtA-nCElavgGbg"
+        />
         <link rel="icon" href="/favicon.ico" />
 
         <script
@@ -32,10 +35,6 @@ export default function Home() {
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        />
-        <meta
-          name="google-site-verification"
-          content="wsVVMilTgVZRkjsPkBBTM4KKbhuPjYtA-nCElavgGbg"
         />
       </Head>
       <Home_main />
