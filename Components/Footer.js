@@ -165,8 +165,7 @@ export const Footer = () => {
           <h5>Mfrs, Importers, Stockist & Suppliers of :</h5>
           <p>
             {" "}
-            Stainless Steel , Inconel , Monel , Nickal,Cobalt , Nitinol ,
-            Titanium , Nitronic , Hastelloy , Nimonic , Super Duplex , Alloys
+            Stainless Steel Scrap & Turnings , 309,310,A-286,SMO 254,Inconel 800,600,625,825,904L,HC-276,22,B,Monel 400,K500 Nickel,F75,SH-6,SH-4,Nicr,Tungsten,Moly,Nickel,Titanium,Cobalt,Nimonic , Super Duplex , Alloys
             Steel , Carban Steel, Industrial Raw
           </p>
         </div>
