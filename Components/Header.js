@@ -1,12 +1,14 @@
 import React,{useEffect,useRef} from 'react'
 import styles from '../styles/Header.module.css'
 import Link from 'next/link'
+import Image from "next/image";
 import { ReactSearchAutocomplete } from "react-search-autocomplete";
 // import $ from "jquery"
 import { AiOutlineSearch,AiOutlineMenu,AiFillPhone } from "react-icons/ai";
 import { FaCaretDown,FaSearch ,FaWhatsappSquare,FaFacebook,FaTwitter,FaWhatsapp} from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import Router from 'next/router';
+import logo from "../public/Images/k_logo.png";
 const Header = () => {
   const inputNameRef = useRef()
 const{pathname}=Router
@@ -247,107 +249,120 @@ const formatResult = (item) => {
 }
   return (
     <div className={styles.Container}>
-      
       <div className={styles.header_info}>
         <div className={styles.group_info}>
-        <span className={styles.info}><AiFillPhone/> +91 8291870720</span>
-        <span className={styles.info}><MdEmail/> khushimetalandalloy@gmail.com</span>
+          <span className={styles.info}>
+            <AiFillPhone /> +91 8291870720
+          </span>
+          <span className={styles.info}>
+            <MdEmail /> khushimetalandalloy@gmail.com
+          </span>
         </div>
 
-        
         <span className={styles.social_info}>
-
-         <Link  href="https://wa.me/+918291870720"  target="_blank"><FaWhatsappSquare/></Link>
-        
-
+          <Link href="https://wa.me/+918291870720" target="_blank">
+            <FaWhatsappSquare />
+          </Link>
         </span>
       </div>
 
-
-
       <div className={styles.navbar}>
+        <nav>
+          <div className="logo">
+            <Image src={logo} alt=""></Image>
+          </div>
+          <label
+            for="btn"
+            className="icon"
+            onClick={() => {
+              menu_click();
+            }}
+          >
+            <AiOutlineMenu />
+          </label>
+          <input ref={inputNameRef} type="checkbox" id="btn" />
+          <ul id="mobile_list">
+            {header_data.map((item, index) => {
+              return (
+                <li key={index}>
+                  {item.submenu ? (
+                    <label for={item.label} class="show">
+                      {item.name} +
+                    </label>
+                  ) : null}
 
+                  <Link href={item.link}>
+                    {item.name} {item.submenu ? <FaCaretDown /> : null}
+                  </Link>
+                  {item.submenu ? (
+                    <input type="checkbox" id={item.label} />
+                  ) : null}
+                  {item.submenu ? (
+                    <ul>
+                      {item.submenu
+                        ? item.submenu.map((each, index) => {
+                            return (
+                              <li key={index}>
+                                <Link href={each.link} key={index}>
+                                  {each.name}
+                                </Link>
+                              </li>
+                            );
+                          })
+                        : null}
+                    </ul>
+                  ) : null}
+                </li>
+              );
+            })}
+          </ul>
 
-      <nav>
-      <div className="logo"><span>Khushi</span> Metal and Alloys</div>
-      <label for="btn" className="icon" onClick={()=>{
-        
-  menu_click()
-      }}>
-      <AiOutlineMenu/>
-       
-      </label>
-      <input ref={inputNameRef} type="checkbox" id="btn"/>
-      <ul id="mobile_list">
-        {header_data.map((item,index)=>{
-          return(
-            <li key={index}>{item.submenu?<label for={item.label} class="show">{item.name} +</label>:null}
-              
-              
-              <Link href={item.link} >{item.name} {item.submenu?<FaCaretDown/>
-            :null}</Link>
-            {item.submenu?<input type="checkbox" id={item.label}/>:null}
-            {item.submenu?<ul>
-            {item.submenu?
-            item.submenu.map((each,index)=>{
-              return(
-               
-            <li key={index} ><Link href={each.link} key={index} >{each.name}</Link></li>
-          
-              )
-            }):null
-          
-          }
-            </ul>:null}
-            </li>
-          )
-        })}
-
-        
-
-        </ul>
-        
-
-        <div className='d_flex_c search_div' style={{"top": "50%",
-    "right": "16px",
-    "transform": "translateY(-50%)",
-    "position": "absolute"}}>
-          <div className={styles.search_box}>
-          <button className={styles.search_button} onClick={()=>{
-            search_bar_show()
-          }}> <AiOutlineSearch/></button>
-          <div className={styles.searchwrraper} id="sear_wrraper_box">
-          <ReactSearchAutocomplete
-            items={items}
-            
-            onSelect={handleOnSelect}
-           placeholder="Search Products here...!"
-            autoFocus
-            formatResult={formatResult}
-          />
-            {/* <div className='d_flex_c '>
+          <div
+            className="d_flex_c search_div"
+            style={{
+              top: "50%",
+              right: "16px",
+              transform: "translateY(-50%)",
+              position: "absolute",
+            }}
+          >
+            <div className={styles.search_box}>
+              <button
+                className={styles.search_button}
+                onClick={() => {
+                  search_bar_show();
+                }}
+              >
+                {" "}
+                <AiOutlineSearch />
+              </button>
+              <div className={styles.searchwrraper} id="sear_wrraper_box">
+                <ReactSearchAutocomplete
+                  items={items}
+                  onSelect={handleOnSelect}
+                  placeholder="Search Products here...!"
+                  autoFocus
+                  formatResult={formatResult}
+                />
+                {/* <div className='d_flex_c '>
             <input type="text" placeholder='Search...!'></input>
         <span className='btn_cursor'>
 
         <FaSearch/>
         </span>
             </div> */}
-       
 
-        {/* <div className='d_flex_C_F_C w_100 search_link' >
+                {/* <div className='d_flex_C_F_C w_100 search_link' >
           <span className='w_100'><Link href="" className='mx-2'> <AiOutlineSearch/>search 1</Link></span>
           <span className='w_100'><Link href=""  className='mx-2'> <AiOutlineSearch/>search 1</Link></span>
           <span className='w_100'><Link href=""  className='mx-2'> <AiOutlineSearch/>search 1</Link></span>
         </div> */}
-      </div>
-      </div>
-      </div>
+              </div>
+            </div>
+          </div>
+        </nav>
 
-    </nav>
-
-
-      
-       {/* <h4>    <span>Khushi</span> Metal And Alloys</h4>
+        {/* <h4>    <span>Khushi</span> Metal And Alloys</h4>
       <nav>
         <ul>
         {header_data.map((item,index)=>{
@@ -406,12 +421,8 @@ const formatResult = (item) => {
         </div>
       </nav> */}
       </div>
-
-
-
-
     </div>
-  )
+  );
 }
 
 export default Header

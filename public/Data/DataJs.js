@@ -1,51 +1,41 @@
-export const ProductsRangeData=[{
-
-id:1,
-heading:"Nickel Alloys Scrap",
-text:"​We are Supplier of ​Inconal 600, 625, 800, 825, 904L, Monal K 400 / 500, Hast- C 22 / 276, SMO 254, Ni Chrome scrap 80/20, Nimonic 80 Scrap (ni:75% and cr:18%) 309, 310 etc.",
-icon:require("../Images/Icons/NIIcon.png")
-
-},{
-    id:2,
-    heading:"Cobalt Alloys Scrap",
-    text:"​We are Supplier of Stelae,​SH-4, SH-6, SH-12, SH-21, SH-25, SH-31, SH-605, F-75, FSX-414, etc.",
-    icon:require("../Images/Icons/COIcon.png")
-
-
-},
-{
-    id:3,
-    heading:"Stainless Steel Scrap",
-    text:"We are Supplier of Stainless Steel  ​ 200, 300 and 400 series such as: 201, 202, 304, 304L, 310, 316, 316L, 321, 410, 430, etc.",
-    icon:require("../Images/Icons/TIIcon.png")
-
-
-},
-{
-    id:4,
-    heading:"Duplex & Super Duplex Scrap",
-    text:"​​We are Supplier of Duplex & Super Duplex Grade 2205, 2507, Z-100.",
-    icon:require("../Images/Icons/TIIcon.png")
-
-
-},
-{
-    id:5,
-    heading:"Titanium ALLOYS Scrap",
-    text:"We are Supplier  of Grade 2,7 and 7",
-    icon:require("../Images/Icons/NIIcon.png")
-
-
-},
-{
-    id:6,
-    heading:"TUNGSTEN ALLOYS SCRAP",
-    text:"​We are Supplier of pure Tungsten",
-    icon:require("../Images/Icons/WIcon.png")
-
-
-}
-]
+export const ProductsRangeData = [
+  {
+    id: 1,
+    heading: "Nickel Alloys Scrap",
+    text: "​We are Supplier of ​Inconal 600, 625, 800, 825, 904L, Monal K 400 / 500, Hast- C 22 / 276, SMO 254, Ni Chrome scrap 80/20, Nimonic 80 Scrap (ni:75% and cr:18%) 309, 310 etc.",
+    icon: require("../Images/Icons/NIIcon.png"),
+  },
+  {
+    id: 2,
+    heading: "Cobalt Alloys Scrap",
+    text: "​We are Supplier of Stelae,​SH-4, SH-6, SH-12, SH-21, SH-25, SH-31, SH-605, F-75, FSX-414, etc.",
+    icon: require("../Images/Icons/COIcon.png"),
+  },
+  {
+    id: 3,
+    heading: "Stainless Steel Scrap",
+    text: "We are Supplier of Stainless Steel  ​ 200, 300 and 400 series such as: 201, 202, 304, 304L, 310, 316, 316L, 321, 410, 430, etc.",
+    icon: require("../Images/Icons/SSIcon.png"),
+  },
+  {
+    id: 4,
+    heading: "Duplex & Super Duplex Scrap",
+    text: "​​We are Supplier of Duplex & Super Duplex Grade 2205, 2507, Z-100.",
+    icon: require("../Images/Icons/DSIcon.png"),
+  },
+  {
+    id: 5,
+    heading: "Titanium ALLOYS Scrap",
+    text: "We are Supplier  of Grade 2,7 and 7",
+    icon: require("../Images/Icons/TIIcon.png"),
+  },
+  {
+    id: 6,
+    heading: "TUNGSTEN ALLOYS SCRAP",
+    text: "​We are Supplier of pure Tungsten",
+    icon: require("../Images/Icons/WIcon.png"),
+  },
+];
 
 export const OfferData=[{
 
